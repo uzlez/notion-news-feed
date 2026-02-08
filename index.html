@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Defense Tech x Capital News</title>
+  <title>Defense Tech × Capital Signals</title>
   <style>
     :root { color-scheme: light; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; margin: 0; padding: 16px; }
@@ -28,15 +28,22 @@
   </div>
 
 <script>
-  // Your RSS URL (Google News RSS query)
+  // ---- SETTINGS (only 2 you care about) ----
+  const MAX_ITEMS = 15;
+  const MAX_DAYS  = 30; // change to 60 if you want later
+  // -----------------------------------------
+
+  // Google News RSS query
   const RSS_URL = "https://news.google.com/rss/search?q=%28%22defense%20tech%22%20OR%20%22defence%20technology%22%20OR%20%22dual-use%22%20OR%20%22military%20AI%22%20OR%20drones%20OR%20%22autonomous%20systems%22%20OR%20ISR%20OR%20%22electronic%20warfare%22%29%20AND%20%28fund%20OR%20venture%20OR%20investment%20OR%20financing%20OR%20procurement%20OR%20contract%20OR%20%22innovation%20fund%22%20OR%20%22industrial%20policy%22%29&hl=en-GB&gl=GB&ceid=GB:en";
 
-  // CORS-friendly fetch via AllOrigins
+  // CORS-friendly fetch via AllOrigins (same as your working version)
   const FETCH_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(RSS_URL);
 
   const feedEl = document.getElementById("feed");
   const statusEl = document.getElementById("status");
   const errEl = document.getElementById("err");
+
+  const cutoffMs = Date.now() - (MAX_DAYS * 24 * 60 * 60 * 1000);
 
   function timeAgo(d) {
     const diff = Date.now() - d.getTime();
@@ -64,19 +71,32 @@
       const parser = new DOMParser();
       const xml = parser.parseFromString(xmlText, "text/xml");
 
-      const items = [...xml.querySelectorAll("item")].slice(0, 30);
-      if (!items.length) throw new Error("No items found (feed empty or blocked).");
+      // Take more first, then filter by date, then cut to MAX_ITEMS
+      const allItems = [...xml.querySelectorAll("item")].slice(0, 80);
 
-      statusEl.textContent = `Showing latest ${items.length} items • updates when page reloads`;
+      // keep only items with pubDate within last MAX_DAYS
+      const recent = allItems.filter(it => {
+        const pubDateStr = (it.querySelector("pubDate")?.textContent || "").trim();
+        if (!pubDateStr) return false;
+        const pubDate = new Date(pubDateStr);
+        if (isNaN(pubDate.getTime())) return false;
+        return pubDate.getTime() >= cutoffMs;
+      }).slice(0, MAX_ITEMS);
 
-      feedEl.innerHTML = items.map(it => {
+      if (!recent.length) throw new Error(`No items found in last ${MAX_DAYS} days.`);
+
+      statusEl.textContent = `Last ${MAX_DAYS} days • showing ${recent.length} items`;
+
+      feedEl.innerHTML = recent.map(it => {
         const rawTitle = (it.querySelector("title")?.textContent || "").trim();
         const link = (it.querySelector("link")?.textContent || "").trim();
         const pubDateStr = (it.querySelector("pubDate")?.textContent || "").trim();
         const pubDate = pubDateStr ? new Date(pubDateStr) : null;
 
-        // Strip publisher from displayed headline if present
-        const headline = rawTitle.includes(" - ") ? rawTitle.split(" - ").slice(0, -1).join(" - ").trim() : rawTitle;
+        const headline = rawTitle.includes(" - ")
+          ? rawTitle.split(" - ").slice(0, -1).join(" - ").trim()
+          : rawTitle;
+
         const source = extractSource(rawTitle);
 
         return `
