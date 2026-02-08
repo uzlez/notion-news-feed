@@ -1,0 +1,77 @@
+name: Update feed.json
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch RSS and write feed.json
+        run: |
+          python - << 'PY'
+          import json, re, urllib.parse, urllib.request
+          import xml.etree.ElementTree as ET
+          from datetime import datetime, timezone
+
+          query = '("defense tech" OR "defence technology" OR "dual-use" OR "military AI" OR drones OR "autonomous systems" OR ISR OR "electronic warfare") (fund OR venture OR investment OR financing OR procurement OR contract OR "innovation fund" OR "industrial policy")'
+          q = urllib.parse.quote(query)
+          rss_url = f"https://news.google.com/rss/search?q={q}&hl=en-GB&gl=GB&ceid=GB:en"
+
+          with urllib.request.urlopen(rss_url, timeout=30) as resp:
+            xml_bytes = resp.read()
+
+          root = ET.fromstring(xml_bytes)
+          channel = root.find("channel")
+
+          tag_re = re.compile(r"<[^>]+>")
+          def clean_html(s):
+            s = tag_re.sub("", s or "")
+            s = re.sub(r"\s+", " ", s).strip()
+            return s
+
+          def split_title(t):
+            if " - " in t:
+              parts = t.split(" - ")
+              return " - ".join(parts[:-1]).strip(), parts[-1].strip()
+            return t.strip(), "Google News"
+
+          items = []
+          for it in (channel.findall("item") if channel is not None else []):
+            title = (it.findtext("title") or "").strip()
+            link  = (it.findtext("link") or "").strip()
+            pub   = (it.findtext("pubDate") or "").strip()
+            desc  = clean_html(it.findtext("description") or "")
+
+            if not title or not link or not pub:
+              continue
+
+            headline, source = split_title(title)
+            items.append({
+              "headline": headline,
+              "source": source,
+              "link": link,
+              "pubDate": pub,
+              "snippet": desc
+            })
+
+          out = {"generatedAt": datetime.now(timezone.utc).isoformat(), "items": items}
+          with open("feed.json", "w", encoding="utf-8") as f:
+            json.dump(out, f, ensure_ascii=False, indent=2)
+
+          print("Wrote feed.json:", len(items))
+          PY
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add feed.json
+          git diff --staged --quiet || (git commit -m "Update feed.json" && git push)
