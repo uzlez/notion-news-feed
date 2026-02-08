@@ -3,20 +3,79 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Defense Tech x Capital News</title>
+  <title>Defense Tech × Capital Signals</title>
   <style>
     :root { color-scheme: light; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; margin: 0; padding: 16px; }
-    .wrap { max-width: 900px; margin: 0 auto; }
-    h1 { font-size: 16px; margin: 0 0 10px 0; font-weight: 600; opacity: 0.9; }
-    .meta { font-size: 12px; opacity: 0.6; margin-bottom: 14px; }
-    .item { padding: 12px 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; margin-bottom: 10px; }
-    .title { font-size: 14px; font-weight: 600; line-height: 1.3; margin: 0 0 6px 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: #fff;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: 16px; margin: 0 0 6px 0; font-weight: 700; letter-spacing: 0.1px; }
+    .meta { font-size: 12px; opacity: 0.65; margin-bottom: 14px; }
+
+    .section {
+      margin: 18px 0 10px;
+      padding-top: 6px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 10px 0;
+    }
+    .badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.06);
+      opacity: 0.9;
+      font-weight: 600;
+    }
+
+    .item {
+      padding: 12px 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.28;
+      margin: 0 0 6px 0;
+    }
     .title a { color: inherit; text-decoration: none; }
     .title a:hover { text-decoration: underline; }
-    .sub { font-size: 12px; opacity: 0.7; display: flex; gap: 10px; flex-wrap: wrap; }
-    .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: rgba(0,0,0,0.05); }
-    .err { color: #b00020; font-size: 13px; }
+
+    .snippet {
+      font-size: 12.5px;
+      line-height: 1.35;
+      margin: 0 0 8px 0;
+      opacity: 0.82;
+    }
+
+    .sub {
+      font-size: 11.5px;
+      opacity: 0.72;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.05);
+      font-weight: 600;
+    }
+    .err { color: #b00020; font-size: 13px; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -28,15 +87,39 @@
   </div>
 
 <script>
-  // Your RSS URL (Google News RSS query)
-  const RSS_URL = "https://news.google.com/rss/search?q=%28%22defense%20tech%22%20OR%20%22defence%20technology%22%20OR%20%22dual-use%22%20OR%20%22military%20AI%22%20OR%20drones%20OR%20%22autonomous%20systems%22%20OR%20ISR%20OR%20%22electronic%20warfare%22%29%20AND%20%28fund%20OR%20venture%20OR%20investment%20OR%20financing%20OR%20procurement%20OR%20contract%20OR%20%22innovation%20fund%22%20OR%20%22industrial%20policy%22%29&hl=en-GB&gl=GB&ceid=GB:en";
+  /***********************
+   * CONFIG (edit later)
+   ***********************/
+  const MAX_DAYS = 60;          // show only last N days
+  const MAX_ITEMS = 15;         // show at most N items total
 
-  // CORS-friendly fetch via AllOrigins
-  const FETCH_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(RSS_URL);
+  // Google News RSS: two-bucket query (defense tech terms) AND (capital/procurement/policy terms)
+  // Locale: hl=en-GB gl=GB is fine; results still include EU/US/UK/Ukraine stories.
+  const RSS_URL =
+    "https://news.google.com/rss/search?q=" +
+    encodeURIComponent(
+      '("defense tech" OR "defence technology" OR "dual-use" OR "military AI" OR drones OR "autonomous systems" OR ISR OR "electronic warfare") ' +
+      '(fund OR venture OR investment OR financing OR procurement OR contract OR "innovation fund" OR "industrial policy")'
+    ) +
+    "&hl=en-GB&gl=GB&ceid=GB:en";
 
+  // Noise filter (title-based): hides “battlefield/frontline” updates while keeping Ukraine as a region.
+  // You can add/remove terms anytime.
+  const NOISE_TERMS = [
+    "frontline","front line","battlefield","shelling","missile","airstrike","strike hits",
+    "killed","casualties","drone attack","russia hits","russian strike","ukraine hit",
+    "map","battle","captured","territory","counteroffensive"
+  ];
+
+  /***********************
+   * Helpers
+   ***********************/
   const feedEl = document.getElementById("feed");
   const statusEl = document.getElementById("status");
   const errEl = document.getElementById("err");
+
+  const MS_DAY = 24 * 60 * 60 * 1000;
+  const cutoffMs = Date.now() - (MAX_DAYS * MS_DAY);
 
   function timeAgo(d) {
     const diff = Date.now() - d.getTime();
@@ -48,51 +131,169 @@
     return `${days}d ago`;
   }
 
-  function extractSource(titleText) {
-    // Google News often formats as "Headline - Publisher"
-    const parts = titleText.split(" - ");
+  function stripHtml(html) {
+    const div = document.createElement("div");
+    div.innerHTML = html || "";
+    return (div.textContent || div.innerText || "").replace(/\s+/g, " ").trim();
+  }
+
+  function truncate(s, n) {
+    if (!s) return "";
+    if (s.length <= n) return s;
+    return s.slice(0, n).replace(/\s+\S*$/, "") + "…";
+  }
+
+  function extractSourceFromTitle(rawTitle) {
+    // Google News often formats item title as: "Headline - Publisher"
+    const parts = (rawTitle || "").split(" - ");
     if (parts.length >= 2) return parts[parts.length - 1].trim();
     return "Google News";
   }
 
+  function extractHeadline(rawTitle) {
+    const t = (rawTitle || "").trim();
+    if (!t) return "";
+    if (t.includes(" - ")) return t.split(" - ").slice(0, -1).join(" - ").trim();
+    return t;
+  }
+
+  function isNoise(headline) {
+    const h = (headline || "").toLowerCase();
+    return NOISE_TERMS.some(term => h.includes(term));
+  }
+
+  // Simple auto-sectioning based on title keywords (you can tweak any time)
+  function classify(title, snippet) {
+    const t = (title || "").toLowerCase();
+    const s = (snippet || "").toLowerCase();
+    const x = t + " " + s;
+
+    const hasAny = (arr) => arr.some(k => x.includes(k));
+
+    if (hasAny(["raises","raised","funding","seed","pre-seed","series a","series b","round","investment","invests","backed","valuation","vc","venture capital"])) {
+      return "Funding / VC";
+    }
+    if (hasAny(["procurement","tender","contract","awarded","award","framework","supplier","purchase","order","deal signed","prime contractor"])) {
+      return "Procurement / Contracts";
+    }
+    if (hasAny(["industrial policy","policy","regulation","sanctions","export controls","defence industrial","defense industrial","strategy","white paper","parliament","congress","commission","nato","eda","mod","pentagon"])) {
+      return "Policy / Industrial";
+    }
+    if (hasAny(["drone","drones","autonomous","ai","military ai","isr","electronic warfare","ew","counter-uas","c-uas","sensor","radar","jammer","satellite","swarm","jetson"])) {
+      return "Tech / Systems";
+    }
+    return "Other";
+  }
+
+  function sectionOrder(name) {
+    const order = {
+      "Funding / VC": 1,
+      "Procurement / Contracts": 2,
+      "Policy / Industrial": 3,
+      "Tech / Systems": 4,
+      "Other": 5
+    };
+    return order[name] || 99;
+  }
+
+  async function fetchXmlText(url) {
+    // Try AllOrigins first; fallback to Jina proxy if needed.
+    const try1 = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
+    try {
+      const r1 = await fetch(try1, { cache: "no-store" });
+      if (r1.ok) return await r1.text();
+    } catch (_) {}
+
+    // Fallback: Jina proxy
+    const try2 = "https://r.jina.ai/http://" + url.replace(/^https?:\/\//, "");
+    const r2 = await fetch(try2, { cache: "no-store" });
+    if (!r2.ok) throw new Error("Fetch failed (proxies blocked): " + r2.status);
+    return await r2.text();
+  }
+
+  function renderSections(grouped) {
+    const sectionNames = Object.keys(grouped).sort((a,b) => sectionOrder(a) - sectionOrder(b));
+    const html = sectionNames.map(name => {
+      const items = grouped[name];
+      if (!items || !items.length) return "";
+      return `
+        <div class="section">
+          <div class="section-title">
+            ${name} <span class="badge">${items.length}</span>
+          </div>
+          ${items.map(renderItem).join("")}
+        </div>
+      `;
+    }).join("");
+    feedEl.innerHTML = html || `<div class="meta">No items matched your filters.</div>`;
+  }
+
+  function renderItem(obj) {
+    const { headline, link, source, pubDate, snippet } = obj;
+    return `
+      <div class="item">
+        <div class="title">
+          <a href="${link}" target="_blank" rel="noopener noreferrer">${headline}</a>
+        </div>
+        ${snippet ? `<div class="snippet">${snippet}</div>` : ""}
+        <div class="sub">
+          <span class="pill">${source}</span>
+          ${pubDate ? `<span class="pill">${timeAgo(pubDate)}</span>` : ""}
+        </div>
+      </div>
+    `;
+  }
+
   async function load() {
     try {
-      const res = await fetch(FETCH_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("Fetch failed: " + res.status);
-      const xmlText = await res.text();
+      errEl.textContent = "";
+      const xmlText = await fetchXmlText(RSS_URL);
 
       const parser = new DOMParser();
       const xml = parser.parseFromString(xmlText, "text/xml");
 
-      const items = [...xml.querySelectorAll("item")].slice(0, 30);
-      if (!items.length) throw new Error("No items found (feed empty or blocked).");
+      const rawItems = [...xml.querySelectorAll("item")];
 
-      statusEl.textContent = `Showing latest ${items.length} items • updates when page reloads`;
-
-      feedEl.innerHTML = items.map(it => {
+      const parsed = rawItems.map(it => {
         const rawTitle = (it.querySelector("title")?.textContent || "").trim();
         const link = (it.querySelector("link")?.textContent || "").trim();
         const pubDateStr = (it.querySelector("pubDate")?.textContent || "").trim();
         const pubDate = pubDateStr ? new Date(pubDateStr) : null;
 
-        // Strip publisher from displayed headline if present
-        const headline = rawTitle.includes(" - ") ? rawTitle.split(" - ").slice(0, -1).join(" - ").trim() : rawTitle;
-        const source = extractSource(rawTitle);
+        // Google News RSS usually includes <description> with HTML; we strip tags.
+        const descHtml = (it.querySelector("description")?.textContent || "").trim();
+        const descText = stripHtml(descHtml);
 
-        return `
-          <div class="item">
-            <div class="title"><a href="${link}" target="_blank" rel="noopener noreferrer">${headline}</a></div>
-            <div class="sub">
-              <span class="pill">${source}</span>
-              ${pubDate ? `<span class="pill">${timeAgo(pubDate)}</span>` : ""}
-            </div>
-          </div>
-        `;
-      }).join("");
+        const headline = extractHeadline(rawTitle);
+        const source = extractSourceFromTitle(rawTitle);
+
+        // Snippet: 1–2 lines feel ~160–220 chars; tune as you like.
+        const snippet = truncate(descText, 200);
+
+        return { headline, link, source, pubDate, snippet };
+      });
+
+      // Filter: has date, within last 60 days, not "noise"
+      const filtered = parsed
+        .filter(x => x.pubDate && x.pubDate.getTime() >= cutoffMs)
+        .filter(x => !isNoise(x.headline))
+        .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
+        .slice(0, MAX_ITEMS);
+
+      // Group into sections
+      const grouped = {};
+      for (const x of filtered) {
+        const sec = classify(x.headline, x.snippet);
+        if (!grouped[sec]) grouped[sec] = [];
+        grouped[sec].push(x);
+      }
+
+      statusEl.textContent = `Last ${MAX_DAYS} days • showing ${filtered.length} items • refresh to update`;
+      renderSections(grouped);
 
     } catch (e) {
-      errEl.textContent = String(e.message || e);
       statusEl.textContent = "Couldn’t load feed.";
+      errEl.textContent = String(e.message || e);
     }
   }
 
