@@ -16,10 +16,7 @@
     h1 { font-size: 16px; margin: 0 0 6px 0; font-weight: 700; letter-spacing: 0.1px; }
     .meta { font-size: 12px; opacity: 0.65; margin-bottom: 14px; }
 
-    .section {
-      margin: 18px 0 10px;
-      padding-top: 6px;
-    }
+    .section { margin: 18px 0 10px; padding-top: 6px; }
     .section-title {
       font-size: 13px;
       font-weight: 700;
@@ -88,13 +85,12 @@
 
 <script>
   /***********************
-   * CONFIG (edit later)
+   * CONFIG
    ***********************/
   const MAX_DAYS = 60;          // show only last N days
   const MAX_ITEMS = 15;         // show at most N items total
 
-  // Google News RSS: two-bucket query (defense tech terms) AND (capital/procurement/policy terms)
-  // Locale: hl=en-GB gl=GB is fine; results still include EU/US/UK/Ukraine stories.
+  // Two-bucket query (defense-tech terms) AND (capital/procurement/policy terms)
   const RSS_URL =
     "https://news.google.com/rss/search?q=" +
     encodeURIComponent(
@@ -103,8 +99,7 @@
     ) +
     "&hl=en-GB&gl=GB&ceid=GB:en";
 
-  // Noise filter (title-based): hides “battlefield/frontline” updates while keeping Ukraine as a region.
-  // You can add/remove terms anytime.
+  // Title-based noise filter: removes frontline/battlefield updates (keeps Ukraine as region)
   const NOISE_TERMS = [
     "frontline","front line","battlefield","shelling","missile","airstrike","strike hits",
     "killed","casualties","drone attack","russia hits","russian strike","ukraine hit",
@@ -144,7 +139,7 @@
   }
 
   function extractSourceFromTitle(rawTitle) {
-    // Google News often formats item title as: "Headline - Publisher"
+    // Google News often formats as: "Headline - Publisher"
     const parts = (rawTitle || "").split(" - ");
     if (parts.length >= 2) return parts[parts.length - 1].trim();
     return "Google News";
@@ -162,7 +157,7 @@
     return NOISE_TERMS.some(term => h.includes(term));
   }
 
-  // Simple auto-sectioning based on title keywords (you can tweak any time)
+  // Auto-sectioning (title + snippet keywords)
   function classify(title, snippet) {
     const t = (title || "").toLowerCase();
     const s = (snippet || "").toLowerCase();
@@ -196,19 +191,45 @@
     return order[name] || 99;
   }
 
+  // ✅ UPDATED: more reliable multi-proxy fetch (fixes "Failed to fetch")
   async function fetchXmlText(url) {
-    // Try AllOrigins first; fallback to Jina proxy if needed.
-    const try1 = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
-    try {
-      const r1 = await fetch(try1, { cache: "no-store" });
-      if (r1.ok) return await r1.text();
-    } catch (_) {}
+    const proxies = [
+      // AllOrigins JSON wrapper
+      async (u) => {
+        const p = "https://api.allorigins.win/get?url=" + encodeURIComponent(u);
+        const r = await fetch(p, { cache: "no-store" });
+        if (!r.ok) throw new Error("AllOrigins(get) HTTP " + r.status);
+        const j = await r.json();
+        if (!j || !j.contents) throw new Error("AllOrigins(get) empty contents");
+        return j.contents;
+      },
+      // ThingProxy
+      async (u) => {
+        const p = "https://thingproxy.freeboard.io/fetch/" + u;
+        const r = await fetch(p, { cache: "no-store" });
+        if (!r.ok) throw new Error("ThingProxy HTTP " + r.status);
+        return await r.text();
+      },
+      // corsproxy.io
+      async (u) => {
+        const p = "https://corsproxy.io/?" + encodeURIComponent(u);
+        const r = await fetch(p, { cache: "no-store" });
+        if (!r.ok) throw new Error("corsproxy.io HTTP " + r.status);
+        return await r.text();
+      }
+    ];
 
-    // Fallback: Jina proxy
-    const try2 = "https://r.jina.ai/http://" + url.replace(/^https?:\/\//, "");
-    const r2 = await fetch(try2, { cache: "no-store" });
-    if (!r2.ok) throw new Error("Fetch failed (proxies blocked): " + r2.status);
-    return await r2.text();
+    let lastErr = null;
+    for (const fn of proxies) {
+      try {
+        const txt = await fn(url);
+        if (txt && txt.length > 200) return txt;
+        lastErr = new Error("Proxy returned too-short response");
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    throw lastErr || new Error("All proxies failed");
   }
 
   function renderSections(grouped) {
@@ -260,27 +281,23 @@
         const pubDateStr = (it.querySelector("pubDate")?.textContent || "").trim();
         const pubDate = pubDateStr ? new Date(pubDateStr) : null;
 
-        // Google News RSS usually includes <description> with HTML; we strip tags.
         const descHtml = (it.querySelector("description")?.textContent || "").trim();
         const descText = stripHtml(descHtml);
 
         const headline = extractHeadline(rawTitle);
         const source = extractSourceFromTitle(rawTitle);
 
-        // Snippet: 1–2 lines feel ~160–220 chars; tune as you like.
         const snippet = truncate(descText, 200);
 
         return { headline, link, source, pubDate, snippet };
       });
 
-      // Filter: has date, within last 60 days, not "noise"
       const filtered = parsed
         .filter(x => x.pubDate && x.pubDate.getTime() >= cutoffMs)
         .filter(x => !isNoise(x.headline))
         .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
         .slice(0, MAX_ITEMS);
 
-      // Group into sections
       const grouped = {};
       for (const x of filtered) {
         const sec = classify(x.headline, x.snippet);
