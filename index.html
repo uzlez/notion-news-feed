@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Defense Tech x Capital News</title>
+  <style>
+    :root { color-scheme: light; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif; margin: 0; padding: 16px; }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 16px; margin: 0 0 10px 0; font-weight: 600; opacity: 0.9; }
+    .meta { font-size: 12px; opacity: 0.6; margin-bottom: 14px; }
+    .item { padding: 12px 12px; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; margin-bottom: 10px; }
+    .title { font-size: 14px; font-weight: 600; line-height: 1.3; margin: 0 0 6px 0; }
+    .title a { color: inherit; text-decoration: none; }
+    .title a:hover { text-decoration: underline; }
+    .sub { font-size: 12px; opacity: 0.7; display: flex; gap: 10px; flex-wrap: wrap; }
+    .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: rgba(0,0,0,0.05); }
+    .err { color: #b00020; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Defense Tech × Capital Signals</h1>
+    <div class="meta" id="status">Loading…</div>
+    <div id="feed"></div>
+    <div class="err" id="err"></div>
+  </div>
+
+<script>
+  // Your RSS URL (Google News RSS query)
+  const RSS_URL = "https://news.google.com/rss/search?q=%28%22defense%20tech%22%20OR%20%22defence%20technology%22%20OR%20%22dual-use%22%20OR%20%22military%20AI%22%20OR%20drones%20OR%20%22autonomous%20systems%22%20OR%20ISR%20OR%20%22electronic%20warfare%22%29%20AND%20%28fund%20OR%20venture%20OR%20investment%20OR%20financing%20OR%20procurement%20OR%20contract%20OR%20%22innovation%20fund%22%20OR%20%22industrial%20policy%22%29&hl=en-GB&gl=GB&ceid=GB:en";
+
+  // CORS-friendly fetch via AllOrigins
+  const FETCH_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(RSS_URL);
+
+  const feedEl = document.getElementById("feed");
+  const statusEl = document.getElementById("status");
+  const errEl = document.getElementById("err");
+
+  function timeAgo(d) {
+    const diff = Date.now() - d.getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 60) return `${mins}m ago`;
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return `${hrs}h ago`;
+    const days = Math.floor(hrs / 24);
+    return `${days}d ago`;
+  }
+
+  function extractSource(titleText) {
+    // Google News often formats as "Headline - Publisher"
+    const parts = titleText.split(" - ");
+    if (parts.length >= 2) return parts[parts.length - 1].trim();
+    return "Google News";
+  }
+
+  async function load() {
+    try {
+      const res = await fetch(FETCH_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("Fetch failed: " + res.status);
+      const xmlText = await res.text();
+
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(xmlText, "text/xml");
+
+      const items = [...xml.querySelectorAll("item")].slice(0, 30);
+      if (!items.length) throw new Error("No items found (feed empty or blocked).");
+
+      statusEl.textContent = `Showing latest ${items.length} items • updates when page reloads`;
+
+      feedEl.innerHTML = items.map(it => {
+        const rawTitle = (it.querySelector("title")?.textContent || "").trim();
+        const link = (it.querySelector("link")?.textContent || "").trim();
+        const pubDateStr = (it.querySelector("pubDate")?.textContent || "").trim();
+        const pubDate = pubDateStr ? new Date(pubDateStr) : null;
+
+        // Strip publisher from displayed headline if present
+        const headline = rawTitle.includes(" - ") ? rawTitle.split(" - ").slice(0, -1).join(" - ").trim() : rawTitle;
+        const source = extractSource(rawTitle);
+
+        return `
+          <div class="item">
+            <div class="title"><a href="${link}" target="_blank" rel="noopener noreferrer">${headline}</a></div>
+            <div class="sub">
+              <span class="pill">${source}</span>
+              ${pubDate ? `<span class="pill">${timeAgo(pubDate)}</span>` : ""}
+            </div>
+          </div>
+        `;
+      }).join("");
+
+    } catch (e) {
+      errEl.textContent = String(e.message || e);
+      statusEl.textContent = "Couldn’t load feed.";
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>
