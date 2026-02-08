@@ -28,16 +28,14 @@
   </div>
 
 <script>
-  // ---- SETTINGS (only 2 you care about) ----
+  // ---- ONLY SETTINGS YOU CARE ABOUT ----
   const MAX_ITEMS = 15;
-  const MAX_DAYS  = 30; // change to 60 if you want later
-  // -----------------------------------------
+  const MAX_DAYS  = 30; // change to 60 if you want
+  // -------------------------------------
 
-  // Google News RSS query
-  const RSS_URL = "https://news.google.com/rss/search?q=%28%22defense%20tech%22%20OR%20%22defence%20technology%22%20OR%20%22dual-use%22%20OR%20%22military%20AI%22%20OR%20drones%20OR%20%22autonomous%20systems%22%20OR%20ISR%20OR%20%22electronic%20warfare%22%29%20AND%20%28fund%20OR%20venture%20OR%20investment%20OR%20financing%20OR%20procurement%20OR%20contract%20OR%20%22innovation%20fund%22%20OR%20%22industrial%20policy%22%29&hl=en-GB&gl=GB&ceid=GB:en";
-
-  // CORS-friendly fetch via AllOrigins (same as your working version)
-  const FETCH_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(RSS_URL);
+  // Your Google News RSS URL (your "two-bucket" query)
+  const RSS_URL =
+    "https://news.google.com/rss/search?q=%28%22defense%20tech%22%20OR%20%22defence%20technology%22%20OR%20%22dual-use%22%20OR%20%22military%20AI%22%20OR%20drones%20OR%20%22autonomous%20systems%22%20OR%20ISR%20OR%20%22electronic%20warfare%22%29%20AND%20%28fund%20OR%20venture%20OR%20investment%20OR%20financing%20OR%20procurement%20OR%20contract%20OR%20%22innovation%20fund%22%20OR%20%22industrial%20policy%22%29&hl=en-GB&gl=GB&ceid=GB:en";
 
   const feedEl = document.getElementById("feed");
   const statusEl = document.getElementById("status");
@@ -56,31 +54,84 @@
   }
 
   function extractSource(titleText) {
-    // Google News often formats as "Headline - Publisher"
     const parts = titleText.split(" - ");
     if (parts.length >= 2) return parts[parts.length - 1].trim();
     return "Google News";
   }
 
+  // Try multiple fetch methods. Still one-file, no extra infrastructure.
+  async function fetchRssXml(url) {
+    const attempts = [
+      // 1) AllOrigins RAW
+      async () => {
+        const u = "https://api.allorigins.win/raw?url=" + encodeURIComponent(url);
+        const r = await fetch(u, { cache: "no-store" });
+        if (!r.ok) throw new Error("AllOrigins(raw) " + r.status);
+        return await r.text();
+      },
+      // 2) AllOrigins GET (JSON wrapper)
+      async () => {
+        const u = "https://api.allorigins.win/get?url=" + encodeURIComponent(url);
+        const r = await fetch(u, { cache: "no-store" });
+        if (!r.ok) throw new Error("AllOrigins(get) " + r.status);
+        const j = await r.json();
+        if (!j || !j.contents) throw new Error("AllOrigins(get) empty");
+        return j.contents;
+      },
+      // 3) ThingProxy
+      async () => {
+        const u = "https://thingproxy.freeboard.io/fetch/" + url;
+        const r = await fetch(u, { cache: "no-store" });
+        if (!r.ok) throw new Error("ThingProxy " + r.status);
+        return await r.text();
+      },
+      // 4) corsproxy.io
+      async () => {
+        const u = "https://corsproxy.io/?" + encodeURIComponent(url);
+        const r = await fetch(u, { cache: "no-store" });
+        if (!r.ok) throw new Error("corsproxy.io " + r.status);
+        return await r.text();
+      },
+      // 5) Jina AI proxy (works sometimes, not always)
+      async () => {
+        const u = "https://r.jina.ai/http://" + url.replace(/^https?:\/\//, "");
+        const r = await fetch(u, { cache: "no-store" });
+        if (!r.ok) throw new Error("jina.ai " + r.status);
+        return await r.text();
+      },
+    ];
+
+    let lastErr = null;
+    for (const fn of attempts) {
+      try {
+        const txt = await fn();
+        if (txt && txt.length > 200) return txt;
+        lastErr = new Error("Proxy returned too-short response");
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    throw lastErr || new Error("All proxy attempts failed");
+  }
+
   async function load() {
     try {
-      const res = await fetch(FETCH_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error("Fetch failed: " + res.status);
-      const xmlText = await res.text();
+      errEl.textContent = "";
+      statusEl.textContent = "Loading…";
+
+      const xmlText = await fetchRssXml(RSS_URL);
 
       const parser = new DOMParser();
       const xml = parser.parseFromString(xmlText, "text/xml");
 
-      // Take more first, then filter by date, then cut to MAX_ITEMS
       const allItems = [...xml.querySelectorAll("item")].slice(0, 80);
 
-      // keep only items with pubDate within last MAX_DAYS
       const recent = allItems.filter(it => {
         const pubDateStr = (it.querySelector("pubDate")?.textContent || "").trim();
         if (!pubDateStr) return false;
-        const pubDate = new Date(pubDateStr);
-        if (isNaN(pubDate.getTime())) return false;
-        return pubDate.getTime() >= cutoffMs;
+        const d = new Date(pubDateStr);
+        if (isNaN(d.getTime())) return false;
+        return d.getTime() >= cutoffMs;
       }).slice(0, MAX_ITEMS);
 
       if (!recent.length) throw new Error(`No items found in last ${MAX_DAYS} days.`);
@@ -104,15 +155,15 @@
             <div class="title"><a href="${link}" target="_blank" rel="noopener noreferrer">${headline}</a></div>
             <div class="sub">
               <span class="pill">${source}</span>
-              ${pubDate ? `<span class="pill">${timeAgo(pubDate)}</span>` : ""}
+              ${pubDate && !isNaN(pubDate.getTime()) ? `<span class="pill">${timeAgo(pubDate)}</span>` : ""}
             </div>
           </div>
         `;
       }).join("");
 
     } catch (e) {
-      errEl.textContent = String(e.message || e);
       statusEl.textContent = "Couldn’t load feed.";
+      errEl.textContent = String(e.message || e);
     }
   }
 
@@ -120,4 +171,3 @@
 </script>
 </body>
 </html>
-
