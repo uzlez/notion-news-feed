@@ -1,20 +1,6 @@
 {
-  "generatedAt": "2026-02-09T22:02:21.745264+00:00",
+  "generatedAt": "2026-02-09T23:04:56.234923+00:00",
   "items": [
-    {
-      "headline": "New Saudi Fund Aims to Bring US Defense Tech and Local Manufacturing Together",
-      "source": "TechAfrica News",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUkh3eGM3anB5QWJIQkdIb3lFc3FOVEtXX1NvMGpveWJpZlprQmtnbVdOb3A0ekYxM3ZXZHN1RHdZRHl4M1lQOExNWV9fbzlJUmYza2NMeWpKRmozWnAtcFNUQkhEZHlMVTV6bG9HS3N0b1A2UkVucnlWdzdHZUpVRi0wcUV5S3lvTm1RQ0dxcmZNRzdPYXFoa3NEd3pvUjVqRDFCUWdPY0hYM0JPV2JXaEg2VEdZMlk?oc=5",
-      "pubDate": "Mon, 09 Feb 2026 11:00:57 GMT",
-      "snippet": "New Saudi Fund Aims to Bring US Defense Tech and Local Manufacturing Together&nbsp;&nbsp;TechAfrica News"
-    },
-    {
-      "headline": "DTCP expands into defence with €20M-per-deal Fund for security and dual-use startups",
-      "source": "Tech.eu",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSmJNZ21xREtsSVB3UGpqWjlnOElFZFJNTXVqY3hmM3ZiSURBOGluVktGLXVSc0VxendtbEZHa1B0ZFhTanFyemJpS1FSTHRydzNjdlNLNVJPNnotYmI0VGdhVl9hU1cxa3NqWXp3bXhRV3NrempJS1BnTXNUdXJ4OG5QbkpVQV83QmtNeWN4R1FMZFlXbF9wN3puYjh0MDM1OG5GOVBIZ3ljd2sxY25ZWW9ZbFk?oc=5",
-      "pubDate": "Fri, 16 Jan 2026 08:00:00 GMT",
-      "snippet": "DTCP expands into defence with €20M-per-deal Fund for security and dual-use startups&nbsp;&nbsp;Tech.eu"
-    },
     {
       "headline": "New strategic partnership to unlock billions and boost military AI and innovation",
       "source": "GOV.UK",
@@ -49,6 +35,20 @@
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSTlveHc1SzNFcE8zeUU5TUtpUW5VMllzdi1Hcy1uMzd1ZTVJbW9xVy1PSkk3R0FiaC1YWlF5b0tTRWtORTJwMDJEdnAtVU02WE9rT0xob1lVMkVnVXFrWUp3eUcxc1Q4ckZIWHNXS2lhRzJwMFZNbktWdEpZNXBoeUZaLXJHVHNQVE5wR0Q0Q1prb3NBSXpVVmZ0TVFWMVhKTTBUMDd1WlM0dGl0bDJlc2JIakVQaGlGNFh5eFRsYmdBN0k3RkhpNnA5Zw?oc=5",
       "pubDate": "Thu, 15 Jan 2026 08:00:00 GMT",
       "snippet": "Ukrainian Defense Tech Investment Jumps Nearly 100-Fold to a Record $105 Million in 2025&nbsp;&nbsp;UNITED24 Media"
+    },
+    {
+      "headline": "From Drones to Data: Private Contractors and Cyber Mercenaries",
+      "source": "Royal United Services Institute",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdzRReGFVNzlmQlhndFNlTi1wUnlCa2dzWFB4X1J5NzROSHNXaWJNSnNZWk1yOHRDMlBEOFNsVm13RlNsQnYtSVQ0SW4zMzd6VlZYR1BzQU1SOHJ1Z0ZVZW5xOHQyYW9SekkxbjZsSHM4ZkpTODk5SFVnMzlVQXZGVUJHNjVBM01CQkZZYTl2QjAwcjFNcGhlTnRlRjVYbXgxZjZ3NF9zLXF0MU0yU2lDQlVJMm1ZaHRxM1Vn?oc=5",
+      "pubDate": "Fri, 19 Sep 2025 07:00:00 GMT",
+      "snippet": "From Drones to Data: Private Contractors and Cyber Mercenaries&nbsp;&nbsp;Royal United Services Institute"
+    },
+    {
+      "headline": "Von der Leyen reaffirms dual use R&D plans ahead of EU budget proposal",
+      "source": "Science|Business",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZDJoV3FSRnpDSktPY2J4Q0hSSkVDbVVRdXpLSHl2bjdNUW50d1FHb0RsOWdBLUhaT0tqN3p4MlpkMVpzc3NGanlha2drd01vTWF0S25hcV9JWG52dzA3RWVIUjQxNmJRNmUwSktFMWhEdXFCVmcycTc3Y2NRNWhIVENDOWJaYko4b3NFOF9wSEctOHZ1aTFVUU4wTHd6NTJJNWdmUVA5QUZxSDB3?oc=5",
+      "pubDate": "Thu, 26 Jun 2025 07:00:00 GMT",
+      "snippet": "Von der Leyen reaffirms dual use R&D plans ahead of EU budget proposal&nbsp;&nbsp;Science|Business"
     },
     {
       "headline": "European defense tech is attracting investment, but some LPs remain wary",
@@ -93,11 +93,11 @@
       "snippet": "ABZ Innovation Secures $8.2 Million Investment to Scale Heavy-Duty Agricultural and Industrial Drones and Secure European Competitiveness in the Drone Sector&nbsp;&nbsp;Business Wire"
     },
     {
-      "headline": "Dedicated defence fund sets tone for EIF dual-use investment",
-      "source": "Science|Business",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX2dHSVJPZ3RtaXJ2SFg0T3k2NWJUcU9Xa1VmLW9sNDVrMkRxQ0ZXMzFhT3U1VkJiWWRSVWRlNGJJSnJCTUtfRWdtSU9WV3BDWkpXVldaWFRtbWJYdVdvYy1tWVJUN0RiaDZROEZRVzFfTnN2U1ZjT1JWZ2VnQ0RCRWJPSmZQQTVPLThrNFA2RXNwcnhLUTkyalN6MVM1YnRJaFdvNk94bjVBUFJHcU9V?oc=5",
-      "pubDate": "Tue, 10 Jun 2025 07:00:00 GMT",
-      "snippet": "Dedicated defence fund sets tone for EIF dual-use investment&nbsp;&nbsp;Science|Business"
+      "headline": "New joint venture to produce Ukrainian drones in Germany",
+      "source": "Ukrinform",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaWl1M3BVazBNWFFOanVsLVloTGlwRFk0WG1PY19LSmFzV0pBTVZUQU5jaTUzcEJHb25aLU8xU3ZYdHU2ejZnS0FGMlNVTnU1N2NTbHY0WlQ2c19tOG12eFItNGJtQk9TdFBxaEZ1WlZkRVMySEtIdjV6d0d1emNCdllsMDE4OUlwMzhPcmlrdnZKTTU4TnpMSmp1UlNiV0tTWnYyOHNzd3E5cElpc1FR0gG0AUFVX3lxTE92dkN0SlQxdm55c1pKOUVxLW5LTVQtblBjVnBnSWFDdGdGY194dWFXRWlxdkNjY094Rzg2YWNNZWFFSUk1VnhvNEhTc3pQall6TFB5eUFHSUtsX2dqVTFIek9Sd2lZM3BCU1dkVXN1X2doZzF3OTNFUzQ4dlp4UlFzU2I3RHRiOWpfeUM4Q1RFWmZQVzJVY0VHaWd1WVp4SlVTSHVKNXFYYkdoNFVZYkRFY29EUg?oc=5",
+      "pubDate": "Mon, 15 Dec 2025 08:00:00 GMT",
+      "snippet": "New joint venture to produce Ukrainian drones in Germany&nbsp;&nbsp;Ukrinform"
     },
     {
       "headline": "How Is Europe Navigating Drone Defence Procurement?",
@@ -107,18 +107,11 @@
       "snippet": "How Is Europe Navigating Drone Defence Procurement?&nbsp;&nbsp;Supply Chain Digital Magazine"
     },
     {
-      "headline": "New joint venture to produce Ukrainian drones in Germany",
-      "source": "Ukrinform",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaWl1M3BVazBNWFFOanVsLVloTGlwRFk0WG1PY19LSmFzV0pBTVZUQU5jaTUzcEJHb25aLU8xU3ZYdHU2ejZnS0FGMlNVTnU1N2NTbHY0WlQ2c19tOG12eFItNGJtQk9TdFBxaEZ1WlZkRVMySEtIdjV6d0d1emNCdllsMDE4OUlwMzhPcmlrdnZKTTU4TnpMSmp1UlNiV0tTWnYyOHNzd3E5cElpc1FR0gG0AUFVX3lxTE92dkN0SlQxdm55c1pKOUVxLW5LTVQtblBjVnBnSWFDdGdGY194dWFXRWlxdkNjY094Rzg2YWNNZWFFSUk1VnhvNEhTc3pQall6TFB5eUFHSUtsX2dqVTFIek9Sd2lZM3BCU1dkVXN1X2doZzF3OTNFUzQ4dlp4UlFzU2I3RHRiOWpfeUM4Q1RFWmZQVzJVY0VHaWd1WVp4SlVTSHVKNXFYYkdoNFVZYkRFY29EUg?oc=5",
-      "pubDate": "Mon, 15 Dec 2025 08:00:00 GMT",
-      "snippet": "New joint venture to produce Ukrainian drones in Germany&nbsp;&nbsp;Ukrinform"
-    },
-    {
-      "headline": "Corporate investment increases with big bets on drones, robotics and autonomous vehicles",
-      "source": "Global Venturing",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUzFJbmRjQkQyZXZZTTAySVhtcTFxSllmQzcyRzRial95MFZ5ektYOHd5c3pYZlNodVlQX3hnNkVxSmt6d0xqdTh0TTVCcDkzYUNZdExuYVB3cFNkUVZuT0NkbnIwZ2YxMmo2RHVwbG5YWGlQYm5WY3NUWTdSQnJtYjdCVERDMjJjajNmcGlmc1U1dmh0djl6Wk5tM3R0VU5hdC1PVnB0RTVHMzE3RkhIbjRta3RIelJidDlMRjBJOXRFYkhpRm80OTRnTQ?oc=5",
-      "pubDate": "Thu, 06 Nov 2025 08:00:00 GMT",
-      "snippet": "Corporate investment increases with big bets on drones, robotics and autonomous vehicles&nbsp;&nbsp;Global Venturing"
+      "headline": "MoD trails £1bn investment in cyber and drones",
+      "source": "PublicTechnology",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNUZLNE9ycHBFNGt2VW5vUHlFa0J3WFNQTWVFdExUa2VHNG5CODRUQXN2Y084OXFaNWNKWldkclo3RHZJMVdTQ0RZdWlNWWowTTBlZXFvLXF6TEJBelVPQmJRakRDbENIWHhTY2czWlVlYUlsUTVWLWw4RFN2V0ZUSm5HZ3ZiNm1iYzlPclRIOTNKTTgweEZmRVhHMWpjUFgwTk1EbW5BblNvaFUyMUdtSg?oc=5",
+      "pubDate": "Tue, 03 Jun 2025 07:00:00 GMT",
+      "snippet": "MoD trails £1bn investment in cyber and drones&nbsp;&nbsp;PublicTechnology"
     },
     {
       "headline": "Major £5 billion technology investment accelerates UK defence innovation in a European first",
@@ -135,11 +128,25 @@
       "snippet": "How VCs are fueling innovation in defense tech&nbsp;&nbsp;Venture Capital Journal"
     },
     {
+      "headline": "Dedicated defence fund sets tone for EIF dual-use investment",
+      "source": "Science|Business",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX2dHSVJPZ3RtaXJ2SFg0T3k2NWJUcU9Xa1VmLW9sNDVrMkRxQ0ZXMzFhT3U1VkJiWWRSVWRlNGJJSnJCTUtfRWdtSU9WV3BDWkpXVldaWFRtbWJYdVdvYy1tWVJUN0RiaDZROEZRVzFfTnN2U1ZjT1JWZ2VnQ0RCRWJPSmZQQTVPLThrNFA2RXNwcnhLUTkyalN6MVM1YnRJaFdvNk94bjVBUFJHcU9V?oc=5",
+      "pubDate": "Tue, 10 Jun 2025 07:00:00 GMT",
+      "snippet": "Dedicated defence fund sets tone for EIF dual-use investment&nbsp;&nbsp;Science|Business"
+    },
+    {
       "headline": "Agricultural Drones Market Forecast 2026-2032: Flexible Business Models are Broadening Access for Growers and Shifting Procurement Strategies - ResearchAndMarkets.com",
       "source": "Business Wire",
       "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOYkpobkYyTGpxcXY5Tk9IOHJxYWtpVTRBWXNpcWpxWHl4dTVTblVScjlubWZFVHpKRlp5OHFsbXAyMEFMV0trMFZfUGpzQkJOV2VhQThtM0pWUEFGRFFfUDNKQXlCSFNBc29XTjhRM3ZfTGt1cjJnV3ZoWlBWalJhV0pLZkpEWFlDSlV0cG1JazRDTkxVSTNhVkJ4dzFrX3JiMUF3V0luUE12ck9rLVd6a0FndXpLRjF5cXVtZ2FvSzRxd1NNbFVLMUJCaU02dFNadmdkN09Pc21wWGg0TzRrNnh5cVNvd2VGOS1rdVdBc2xOM1pUT0V4NjZhUWN0N0dxb1I1VVFrbTBYS2tWMDctYWRJeUt6aHpqLTlVRzFibE9SREozOG1YUmN0RlJrbnJfY19lcF9WWV9YM0FPTmhITXR1V2c?oc=5",
       "pubDate": "Wed, 21 Jan 2026 08:00:00 GMT",
       "snippet": "Agricultural Drones Market Forecast 2026-2032: Flexible Business Models are Broadening Access for Growers and Shifting Procurement Strategies - ResearchAndMarkets.com&nbsp;&nbsp;Business Wire"
+    },
+    {
+      "headline": "Corporate investment increases with big bets on drones, robotics and autonomous vehicles",
+      "source": "Global Venturing",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUzFJbmRjQkQyZXZZTTAySVhtcTFxSllmQzcyRzRial95MFZ5ektYOHd5c3pYZlNodVlQX3hnNkVxSmt6d0xqdTh0TTVCcDkzYUNZdExuYVB3cFNkUVZuT0NkbnIwZ2YxMmo2RHVwbG5YWGlQYm5WY3NUWTdSQnJtYjdCVERDMjJjajNmcGlmc1U1dmh0djl6Wk5tM3R0VU5hdC1PVnB0RTVHMzE3RkhIbjRta3RIelJidDlMRjBJOXRFYkhpRm80OTRnTQ?oc=5",
+      "pubDate": "Thu, 06 Nov 2025 08:00:00 GMT",
+      "snippet": "Corporate investment increases with big bets on drones, robotics and autonomous vehicles&nbsp;&nbsp;Global Venturing"
     },
     {
       "headline": "The Week’s 10 Biggest Funding Rounds: AI And Defense Tech Take The Lead",
@@ -149,18 +156,18 @@
       "snippet": "The Week’s 10 Biggest Funding Rounds: AI And Defense Tech Take The Lead&nbsp;&nbsp;Crunchbase News"
     },
     {
-      "headline": "EIC will invest in dual-use start-ups, Commission says",
-      "source": "Science|Business",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUlhPenIyckp6VmtrdjU4aFNwWHI5T3REdVplaG5YaGpnR0VfNEZRMWpnYUgyNHNVazZUZHF2SnNlZnlQYm5qTXpWU1ZlS1Fzb0Rvajd5T1RFU2otWUNfVVJtUFpCSGVkLVNZYmVIQ2VxektucDdjRWRlX04zR1YxUnJGWC0zYmMtU0JtVnV0TUxMeUU2WUJCVXRwckxpU2lGLXJ1WTQ1a19leVlZdEcwRA?oc=5",
-      "pubDate": "Thu, 20 Mar 2025 07:00:00 GMT",
-      "snippet": "EIC will invest in dual-use start-ups, Commission says&nbsp;&nbsp;Science|Business"
-    },
-    {
       "headline": "EDGE Group and Anduril to Form UAE-US Joint Venture to Develop Autonomous Systems",
       "source": "Anduril",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLS1tWTlWUlNXQkR1VGhSWEtJZTN1Zk1hWUIwVzlHdVdqS0FZeV85dXJrc1J5VXhiVU5ucXIyM0djVlRfNDR3eFVPdTBuRVdZSXhXUG1FbWpGaDRfNU4tYV9VaW5MUVU4VnJzbmJ5UE9ZU2swX1l5azdaVl83a184bG5mS3lfRGNVOG5FbklEQXdNb0pSbG11LXg4ZERVMVlrRUg2cDIyM3VyMm50NkhR?oc=5",
       "pubDate": "Wed, 12 Nov 2025 08:00:00 GMT",
       "snippet": "EDGE Group and Anduril to Form UAE-US Joint Venture to Develop Autonomous Systems&nbsp;&nbsp;Anduril"
+    },
+    {
+      "headline": "EIC will invest in dual-use start-ups, Commission says",
+      "source": "Science|Business",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUlhPenIyckp6VmtrdjU4aFNwWHI5T3REdVplaG5YaGpnR0VfNEZRMWpnYUgyNHNVazZUZHF2SnNlZnlQYm5qTXpWU1ZlS1Fzb0Rvajd5T1RFU2otWUNfVVJtUFpCSGVkLVNZYmVIQ2VxektucDdjRWRlX04zR1YxUnJGWC0zYmMtU0JtVnV0TUxMeUU2WUJCVXRwckxpU2lGLXJ1WTQ1a19leVlZdEcwRA?oc=5",
+      "pubDate": "Thu, 20 Mar 2025 07:00:00 GMT",
+      "snippet": "EIC will invest in dual-use start-ups, Commission says&nbsp;&nbsp;Science|Business"
     },
     {
       "headline": "Polish dual-use technologies at DSEI 2025 in London – Polish Investment and Trade Agency",
@@ -212,18 +219,18 @@
       "snippet": "Hydra Drones secures investment from global defence company MBDA&nbsp;&nbsp;The Manufacturer"
     },
     {
+      "headline": "Germany Planning €10 Billion Investment in Military Drones",
+      "source": "bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdVp6THc1UHVWcHFOa1I4ZHJKX2MxMjRfOVNVZUhNMnF0OE04emdpRkhRQTRnU2pwak01d0ItMGh6dTU3YWpVTks4aUh2c19TSjJQNVBlNDJkak5ocGUwanl2TG5YNk9VaF91bWhCa0tNR1RRdzVyejAyNzhjazhMRnNzYjA1S0ZqeWU1ak0wMjhZV2NkMDF5b2J2WGM1QjF0ZC1TQVJfQ3B6NFE5?oc=5",
+      "pubDate": "Wed, 15 Oct 2025 07:00:00 GMT",
+      "snippet": "Germany Planning €10 Billion Investment in Military Drones&nbsp;&nbsp;bloomberg.com"
+    },
+    {
       "headline": "Xiu Xiu to remove music from Spotify due to CEO Daniel Ek’s “investment in AI war drones”",
       "source": "nme.com",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMnhWdVRRbk00VmRmNzRnUHN2RTc2bFZFcHpjNkk2Z0o2em5LdlpNWDZ0WHlsS1REQmwyNGsxUGx2REtwN2tvdGJfTTcwcnVRS3JNWVVnR19wTFdzRWNnYm5DOHZweFR1Tmt3eklESFQ4aWZmOTlVaXV3RVpyMEVMOF9yZzBNa0dyNXNpMWVxcnpJck5BZzdqVDVtQWo1anczSnlvcVJXUUlvNWx0Nm1MeldnZk5XekpZMGI1UGx2UVkxMFU?oc=5",
       "pubDate": "Fri, 25 Jul 2025 07:00:00 GMT",
       "snippet": "Xiu Xiu to remove music from Spotify due to CEO Daniel Ek’s “investment in AI war drones”&nbsp;&nbsp;nme.com"
-    },
-    {
-      "headline": "Germany Planning €10 Billion Investment in Military Drones",
-      "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdVp6THc1UHVWcHFOa1I4ZHJKX2MxMjRfOVNVZUhNMnF0OE04emdpRkhRQTRnU2pwak01d0ItMGh6dTU3YWpVTks4aUh2c19TSjJQNVBlNDJkak5ocGUwanl2TG5YNk9VaF91bWhCa0tNR1RRdzVyejAyNzhjazhMRnNzYjA1S0ZqeWU1ak0wMjhZV2NkMDF5b2J2WGM1QjF0ZC1TQVJfQ3B6NFE5?oc=5",
-      "pubDate": "Wed, 15 Oct 2025 07:00:00 GMT",
-      "snippet": "Germany Planning €10 Billion Investment in Military Drones&nbsp;&nbsp;Bloomberg.com"
     },
     {
       "headline": "Massive Attack pull catalogue from Spotify over military AI investment, TikTok deal edges closer",
@@ -247,18 +254,11 @@
       "snippet": "Where are the exit paths for defense tech start-ups?&nbsp;&nbsp;Venture Capital Journal"
     },
     {
-      "headline": "PowerUP Secures €10M Series A to Scale Dual-Use Hydrogen Solutions",
-      "source": "Fuel Cells Works",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZnlSQnVyd3VkNWRKLXE2aGJpSFdxWkNIdTZRNzhKd05FQW92c1UzZVl4UFBsRzlBMm9jVzExTjhWdW1ZcFVyNXUzdWdRaUxvTi1lRTdVZnRCek5JNnFSRE80Nm9SUENFMEpmMXRJWEF5Z0w4LTJKTkZvdXhhWG1aNDAxVXUxS0VXMTNEWWs4R2xBc1VEc0k3UnNWbjdwdWNWdndXaTcxc01NaXdzWm9wSVIyT3RRYlAtaVJzcTF0TU1kMFZucnc?oc=5",
-      "pubDate": "Tue, 25 Nov 2025 08:00:00 GMT",
-      "snippet": "PowerUP Secures €10M Series A to Scale Dual-Use Hydrogen Solutions&nbsp;&nbsp;Fuel Cells Works"
-    },
-    {
-      "headline": "Ex-NSA director and Israeli defense leaders raise $50M to launch dual-use tech fund",
-      "source": "CTech",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB3TU0zNXB3UGRsNmdVLWdWQjdfMGFjenF1R2tKX2VLR2hFYW8wU0ZGX1F1UjVEWm5mQ2xRQ0JkallDMHVsbDdPUGZCc0ZzOXJsdE55R09GdWpBQ3VnMVVhUmVpeUl2OTE3?oc=5",
-      "pubDate": "Mon, 20 Oct 2025 07:00:00 GMT",
-      "snippet": "Ex-NSA director and Israeli defense leaders raise $50M to launch dual-use tech fund&nbsp;&nbsp;CTech"
+      "headline": "The governance and funding of European rearmament",
+      "source": "Bruegel",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNjBtb3hRNi1OZE5FWF9fd3FTMFZWbWlEWmgxb2xFMXhsRFdNNUpSN0ZkQk1LVXd2U081c2kyUUJyUTRteng0Z1hEVEdjeFBhNkZvUGdBdTFtTVFWQ1JIdXpnaXNGR2N5NkhYcWFOYnJZcGIwNzJxd25PT05selA0NDE2SVc1QQ?oc=5",
+      "pubDate": "Mon, 07 Apr 2025 03:20:07 GMT",
+      "snippet": "The governance and funding of European rearmament&nbsp;&nbsp;Bruegel"
     },
     {
       "headline": "Germany Plans Procurement of 12,000 Strike Drones for Brigade in Lithuania",
@@ -303,18 +303,18 @@
       "snippet": "US Venture Firm Makes First-Ever Direct Investment in Ukrainian Defense Tech&nbsp;&nbsp;UNITED24 Media"
     },
     {
+      "headline": "The Latest Buzzy Tech Investment: Ukrainian Drones",
+      "source": "The Wall Street Journal",
+      "link": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNOUJqNlRCRDZPWHJ1LUFLQWRCSGRPMHdxOEpEaS1sUWF5em94NUJKakJIdXV6WVloOXgtRnA3QmU1bnZ0U1pBSEJYZGx5Skc5emhKa052Y3QzNWJzZWhSLWt0Zzk5ZU5KTWRfTndKaGVtVzg5czd6OEU4R2VrN1llT3lKY29FTUs3QUhOQ2xwWW5STUNNdmRGaHFZR2dYMm0tSmxQRUJvUE9iaW5PM2dFeUJQOWt6WlZ3elZoc0NLd1RIX0htRS1nU3Z1ZU5SU2Q4OHFZWFgwNHZmNWFOOVZ1elRYamRLN3FhM09tekNleVZXWk9acWhZVVMwcm54RGVfY0d5eTRrTlhKSTl3VmtPSC1Nc28tZi1tRUp6bE1LUktWVWtyN2c1YXhrTEowTFRZU0dhd3FMcGlzRThzbGRCam81VnEtZ2wxWVhUeTNNd3R1ZWpKMnptUktybFlkRldFTWxHdWVyYU9pM0pYYUVvNi1NaVBtZzR1QXdZMGVPSXBtVlJqMk9qSHZ2eWhVd1hXaWxBS21R?oc=5",
+      "pubDate": "Sat, 01 Nov 2025 07:00:00 GMT",
+      "snippet": "The Latest Buzzy Tech Investment: Ukrainian Drones&nbsp;&nbsp;The Wall Street Journal"
+    },
+    {
       "headline": "Raybird drones to be built in UK in new joint venture with Ukraine",
       "source": "The Kyiv Independent",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOa19fdXpGeG5zWl9GejJ3bVpOenBIRzB0Y3ltOFBwYU1pMlEzajJTSm5ObWtiMW81M3dDcjZXeUpiQTJCaFpITTd5SzNhNlpvT0FKLXY4cTlxZExxejJIdThCOThjMWdTTzVOanU0LXFOSGlPM1VRLTNyZ05MNVdPNWJsdEM0aFMxRE5EOTZRUmZTcFN4bC1HbmpzVkluMFhhX0x3UGkxTXdDcUdscFZkVG9OdmhjengzV2M5bVJSaE4?oc=5",
       "pubDate": "Thu, 03 Jul 2025 07:00:00 GMT",
       "snippet": "Raybird drones to be built in UK in new joint venture with Ukraine&nbsp;&nbsp;The Kyiv Independent"
-    },
-    {
-      "headline": "The Latest Buzzy Tech Investment: Ukrainian Drones",
-      "source": "The Wall Street Journal",
-      "link": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNVjZSZ0tYUE5sTnlHLXRXMkxuOWdPbnNRLVpJcG1tRkxWak10dU1FWHhtVUFlX01jNWM1eTVYNmVKbXo5bll1bm9oX2k1aWxZUnNPSUNMZmdrWDBHeVVQNGtLYzY1eWxvWmVFcUpvWHB1cTVJdHlOdV84RGE4Nm9TM3FsRGcya0tOakk2QUhGVWF3MzFjbkxPTTRtUnF3ekx6VUhNb1pILXpVWXM1ZUZGNE12bXBzQWQ5WUxVWDZSc3BJczd5cFZNMEVPeHF1SGJITV9JUmZic1BDSG14RVJ1c3pmdFNmUUVIV0xBSHFjNjRaN0drdUt5UVdoM1BOM1VZdmNyVzNLaHlzaEJFcFVzWlFLaXVXMXU2WU1JVWI5UVBzYXdVbjVKUENpNW1vZ01XN3prS3M3ejVaZmJCeDlhUWw3MHNBU3hRYTlQT29Bd3RMT1RQbFVKbkFzX3ZZMXdobUEwamVTVE1NVHoxWl93dDB4QzBTY2VJcnlYbzhLcGNMQTNrUlk0WEZUcXM4T2NxU195eFVn?oc=5",
-      "pubDate": "Sat, 01 Nov 2025 07:00:00 GMT",
-      "snippet": "The Latest Buzzy Tech Investment: Ukrainian Drones&nbsp;&nbsp;The Wall Street Journal"
     },
     {
       "headline": "Low-impact, High-reward ISR Copper Extraction Gains Investment Momentum",
@@ -345,13 +345,6 @@
       "snippet": "Ukraine Secures Over $100M in Defense Tech Investment at Brave1 Defense Tech Valley 2025&nbsp;&nbsp;Kyiv Post"
     },
     {
-      "headline": "Military AI revolution heightens competition for defence tech contracts: Peter Apps",
-      "source": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMjhMdHJKUlg0enBBdDFhRDJnaVNoNlpmRFJENjREaHZyY3VJeGhxOFRDSFNlQUVqTnpxVmZGY3hFUU9wamliMlNZa3FTeGNlRHh0RGNmZlZ3ekNndnpLcXRyTnVlWHplWi1UZXhXSE5jR29Kd1gyOERKd1B2U3lVbF9VUzdYcGtaaFpVRURJcWZoUGZsdG81ZWNSUXlnZXlkaFVVZk5hOW5GLUxnVUR2SW5YTzhlZ1Y4aHB5eXJvVXVCN3Y1dl9LNUZVcVA1eHBOMF9SbkVPTnNuTmFuTUVaM2p6Zw?oc=5",
-      "pubDate": "Fri, 05 Sep 2025 07:00:00 GMT",
-      "snippet": "Military AI revolution heightens competition for defence tech contracts: Peter Apps&nbsp;&nbsp;Reuters"
-    },
-    {
       "headline": "Germany to Fund Thousands of Long-Range Drones for Ukraine in New Deep-Strike Program",
       "source": "UNITED24 Media",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVWp2QTByUURYSVpYalFrbldvZ1REcDlvYnptNWlWV3pVOEdLcHNRdGFkQi1QTF9ReXZVaDI3Z1cwRzFPcDVPUzdEZE9JWHlJRm9tS3FHYnNmRTdzUktfN2ZMU1hicVR0bmhEU1RFdkI0cmdGakRmSWh6SzFHMTlnWVlndDM1NHNnRzZDN1ZTZVBHVWgzRnhQelgteTl4cU1pR3lyR0QwaW1EcUM4Q000Xzl2OTBObnM5UHd4YnJ1S0dQOV83ekJsXw?oc=5",
@@ -371,13 +364,6 @@
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVGJXQmdydmNhU3V3VkYxaWpWT0JiRUxneFJUQy1WQUVoVWMxbWUzcUdEV05pRUVsUHVzMkNFN0VBN2FxUlNCcnRLdTlwNW5CTmJMcVktSDctYnlkTGlZbTRUcTBUQmVWSTdnVV9EODJRazgxcmwyZTFOTVNRa0czSEk0UEpMNEVwLUZVVXh2QUhINXh1QXBlbHc3QVl1alc20gGmAUFVX3lxTE4wdExxS0syNUxSa3YxQ1pycXFfWV85MDhCNk1rUm1la2k5dzJXQkVzM0FXTnlKLXJWWmVxOWMtNDhBemF3dFJ5eDdSaUJLZjhmQjF4T3lOVmo5dkNqUVVfUXFQNmpaRVM1alFhTVU1UVhCYkNFZm1ldExEYkE5dW9uRVVYaFJyUVhpNUMtcmlLWEZwV1JLT19BWEFzWEN6REdrUWlQLWc?oc=5",
       "pubDate": "Tue, 17 Jun 2025 07:00:00 GMT",
       "snippet": "Spotify's Daniel Ek leads $694 million investment in defense startup Helsing&nbsp;&nbsp;CNBC"
-    },
-    {
-      "headline": "UK to fund joint drone production with Ukraine",
-      "source": "The Kyiv Independent",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNGg3U0ZCY0VOVjEtNUpIS3BZTVV0amxJVHpNTlgwLTZaaV9sTUVrOEUxVEI4TUFTYjREMXBmZUlxQkRkSU1kMHBCTi1ORHNPWVhFUV8tSG93X0NYbE9aTUVBSmRpVzZLSTV0Qk1FNTd1T2JvRXNxbkw4aWdjUnZqNw?oc=5",
-      "pubDate": "Tue, 24 Jun 2025 07:00:00 GMT",
-      "snippet": "UK to fund joint drone production with Ukraine&nbsp;&nbsp;The Kyiv Independent"
     },
     {
       "headline": "UK to become 'battle ready' with £5 billion investment for military drones and lasers",
@@ -401,6 +387,13 @@
       "snippet": "Silicon Valley’s new defense tech startups are pulling billions in funding to challenge legacy giants&nbsp;&nbsp;CNBC"
     },
     {
+      "headline": "Norway to Fund Development and Production of Naval Drones in Ukraine",
+      "source": "Мілітарний",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORjlyRVFzNkx5dUNPU3JfVUFXZUI0U3FQQ2V1N09UaFNSU1BMbGN1eVRYSEJfRHc1Y3lneWctZ21Rd2FwWHpERXFPVTMwRXo0UWhUcHhpN2t6Z3d6YTN6ZDJFZEN4VDJERW9qU1ZRQWYzZ0dDNjJQYW1KYWlYZ2ZlUzFIS1V6QURzbVBYdXpxdEc3dlRpc2hOWFUxMU9TWEJkRmc?oc=5",
+      "pubDate": "Mon, 23 Jun 2025 07:00:00 GMT",
+      "snippet": "Norway to Fund Development and Production of Naval Drones in Ukraine&nbsp;&nbsp;Мілітарний"
+    },
+    {
       "headline": "Ukraine uncovers major bribery scheme in electronic warfare systems procurement: MP and officials involved",
       "source": "Українська правда",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1MSkYxZndUdWJCWDRKTHBseXlmX0JLaVdlMmdsajBsLVVCSjhnR3FUZFJ1YldMQ0tRNE9FVWVNZUZ4aDRtXzB2OXdQR0xVald1N3ozcEVuWER3QkZoUDNLQXNuYWrSAXBBVV95cUxOdzNHa0dnVzA1RlZJMnM4aGt1UFRWd2txZk5IVERaWHBMMWg5ZWYtT1VVRGdGSEUybjRXN3NaaDdGQ1dXdkt5dWpyeDNxaXFrX054UXdlOVdXb2V3bEs5YWQwX0VscGhkWnh6VnY5VDhK?oc=5",
@@ -408,25 +401,18 @@
       "snippet": "Ukraine uncovers major bribery scheme in electronic warfare systems procurement: MP and officials involved&nbsp;&nbsp;Українська правда"
     },
     {
-      "headline": "Defence Technology: How Much Did the West Spend in 2024?",
-      "source": "Visual Capitalist",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5QUW1Ob2JvR0x2ekc1TzRubm9vQjd3RmYzbWxrb2NSX3RrekRNQnE1TGEyeUx3RUoyN2tqNEZYdUQweUd5aHJuVWN0X05LQWhKWF83dG9fZ1pKNF91RDJQbVVGRWwtMjlUb1FKTGE4YmlqTkgyWmlfN3pkc2t6Zw?oc=5",
-      "pubDate": "Fri, 04 Jul 2025 07:00:00 GMT",
-      "snippet": "Defence Technology: How Much Did the West Spend in 2024?&nbsp;&nbsp;Visual Capitalist"
-    },
-    {
-      "headline": "‘Sod international aid, we’ve war to fund’; or, how UK wasted £1bn+ on Israeli drones it scrapped",
-      "source": "skwawkbox",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZ2Y5Q295TllLd2RlY0QzRm11eF9jdWtQY1pFYS1rTUxmWkcxYm82dWhMa2FBa3VDZHNXU1ROTGNHT1ZUSjkwaERuRjdNTFVtaTdUc1lVdlZ5Z1lSSTdBbnVsWVJ3MDEzZGg2SDNsbEhSQXJjaTc1MDNHNXJIMVJYcHJjSU9zakNDT0EtOVJNdDVMVU55ZHBlUnBMQldIUVBhS0pMVVZqQTBSVzUySHMzcElWWGhCbklZX1F4bXo1SWw?oc=5",
-      "pubDate": "Mon, 10 Mar 2025 07:00:00 GMT",
-      "snippet": "‘Sod international aid, we’ve war to fund’; or, how UK wasted £1bn+ on Israeli drones it scrapped&nbsp;&nbsp;skwawkbox"
-    },
-    {
       "headline": "Why I’m Covering Defense Tech; Founders Fund’s Concentrated Bets",
       "source": "The Information",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbTlKaS1TT19VRHFSLXVwN2ctOEx2dzFhME44RXdUOGlRSWg4QTJzME5kanlXOHp2QmIxcjQwOElIaEYwSFAwQmhTODBxZV8tZ3ZHSEtpd2k0N0I4VndVMl9Fc3VzV3R6dXFyamsyTVgtLXNUOUY2VFB2S2xRZ2RiYVR1QllPelhMWVNFNEJhQ1pzTGh1Y1p4dnRyNkZMTDlQRzREUkwxdmQwcE0?oc=5",
       "pubDate": "Tue, 07 Oct 2025 07:00:00 GMT",
       "snippet": "Why I’m Covering Defense Tech; Founders Fund’s Concentrated Bets&nbsp;&nbsp;The Information"
+    },
+    {
+      "headline": "Defence Technology: How Much Did the West Spend in 2024?",
+      "source": "Visual Capitalist",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5QUW1Ob2JvR0x2ekc1TzRubm9vQjd3RmYzbWxrb2NSX3RrekRNQnE1TGEyeUx3RUoyN2tqNEZYdUQweUd5aHJuVWN0X05LQWhKWF83dG9fZ1pKNF91RDJQbVVGRWwtMjlUb1FKTGE4YmlqTkgyWmlfN3pkc2t6Zw?oc=5",
+      "pubDate": "Fri, 04 Jul 2025 07:00:00 GMT",
+      "snippet": "Defence Technology: How Much Did the West Spend in 2024?&nbsp;&nbsp;Visual Capitalist"
     },
     {
       "headline": "Zelenskyy proposes partners launch joint production of interceptor drones",
@@ -450,6 +436,13 @@
       "snippet": "Ukraine hosts global defense tech summit to attract investment&nbsp;&nbsp;Straight Arrow News - SAN"
     },
     {
+      "headline": "J2 Ventures: $250 Million Brookhaven Fund Raised To Scale Dual-Use Technology For National Security And Commercial Markets",
+      "source": "Pulse 2.0",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUlBPUmdWTjdVUkM5Vnp4YXBzczJLd3RMLWYzUkEzVjVzN2tWSW1wOXh3VzkzRGM0WVlFc2xYRWIydjNHMFQ5VnQzUVZsUUlYUUxyeEdJX0s1dXBaN2hheko3WERocFVlTzg0U2h4RTNqTWgtcjdGTGRnRi1UT0R4WVg2dGxwNnBTcXhEcC1LQ1k0QTN6NmlvMzNEakMwMDNwTUthemxRR2QydkpweDJFZUlBdEpoMEM2dDI0ZWhmbzdVblNhakhOTWJOeTdlNVFzZXpvX2VHNNIB3AFBVV95cUxQWG8xXzRtWTFKbFBLa1Fvc0ZydXlUZkZUNnd4M3U5dy1Gb19jWjZaWXQ1a2ZTdnpFcnB5bGVfTWhJQi1kTG9zTWpHN0ItN3cyVkUtQ2Q0SE1QTTlvTExEQ1FRajRwRGR2X2x3QkZBcVZFa09JQzZyd19FbzdlSmdwMElaZ01MaXY4ZXRNMmVLWWpRX0dzaU4tRTdDYlBacldoOF9TRFdVdmV2LVRPTHI3c2pGNldHdERqYnpFd0t3b1ZZRkJ0VWhrYVBITzZHSTFHZElJTDBHMGFERG9f?oc=5",
+      "pubDate": "Tue, 11 Nov 2025 08:00:00 GMT",
+      "snippet": "J2 Ventures: $250 Million Brookhaven Fund Raised To Scale Dual-Use Technology For National Security And Commercial Markets&nbsp;&nbsp;Pulse 2.0"
+    },
+    {
       "headline": "UK to fund domestic production of long-range drones for Ukraine",
       "source": "Українська правда",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBMdWtEc3hfaUQzNVBLNllTT1paUzBWUjhDZWR3U2xPbE1xY19RaDg3ajN5WFhIN1VtNXF4N09QbllyRHdQN3pMUjhSZnVZRmRNV1BFMGlNeHd5VFJsY2dWOV95UFnSAXBBVV95cUxNRUEzTVRFV2drc05XV0ZMNkpzX0hTNGl1bzhwYnFiX0N5UW80YUFPX01EeENyekNTRTFmaG5WOXBibE5IclU0MmhvQ2lQQmxINzdxbF9LOUhOckJrc1RQb1dVOUtWcEJSMjB0SDFpODg2?oc=5",
@@ -471,13 +464,6 @@
       "snippet": "SF Band Ditches Spotify Over CEO’s $700M Military AI Investment&nbsp;&nbsp;KQED"
     },
     {
-      "headline": "Spotify boycott: Artists leave ‘garbage hole’ platform after CEO invests in AI weapons",
-      "source": "latimes.com",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOejNtZVJMX2ZQbTRmS0JabnhILWs4R2pqUi1DdFBZb25PM0RXOVoxUlFxS251ZEU5UHFFR3M0Z3RhQVJZTGZSTGY2cHhEN2theXNXTGFYM0VlbDlFU2hSbHI5ZEkySVc1cXc5YlBxblJkeHlVeWpnUWtKWGhpNnVxN3ljS3VPcm11emdXb0lyZGtHWVRqMHVqUThDX1JqMHBIa1JfRXdXdklMeW9GM2pmZV9IQUlKRVczS2lTbjc3cWFNNDNjcVlFRGhQSmdBb1REcnlyTzNDcVVTQQ?oc=5",
-      "pubDate": "Thu, 31 Jul 2025 07:00:00 GMT",
-      "snippet": "Spotify boycott: Artists leave ‘garbage hole’ platform after CEO invests in AI weapons&nbsp;&nbsp;latimes.com"
-    },
-    {
       "headline": "Spotify’s Daniel Ek just bet bigger on Helsing, Europe’s defense tech darling",
       "source": "TechCrunch",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRkJHQkpsOVJHNy0xQmVQWERvNEd2dDJ0VjJxZXA4TXUyWjhQYldDU3ZtMGhUb3BaX0wxY0V4dnA3cFFRdUFKaWgzTkt5V01kLWhSRGN1VmFiYkNwUGZObkQ0WVN5QlM2VnNKdU40RHhReHhRbElUSlY5N3FvOTYwLUNhRHkyblQ1dlR2bS1rUVN6SndfTjVXTWdPRWdxWDZqc0RMWXlqRzdibWpPR1E?oc=5",
@@ -492,13 +478,6 @@
       "snippet": "2025 Vertical Snapshot: Defense Tech&nbsp;&nbsp;pitchbook.com"
     },
     {
-      "headline": "Taiwan to buy over 100,000 military drones",
-      "source": "Defence Blog",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9RQmkxZ2ZpTlpKcE5scWlnSTdwRlZHNGxkWDFtWGtjdnZLNWdLeXBqQjB3REhpYVREc2RUSEFPeHFRbWtFNzZVQkZJV2daMlN2MjhLVW1nd2hsTmVUUnJtUE83UGlKTXFMSzlvVHZ2Rkl1eEhKakHSAXtBVV95cUxONVEyLWJaaVk4MU9URU9EX2tRQ1U5YWE1c2VvMEJFOFB0a0xYcHZWN1lxSVlHTk5pRDUyMzZYSWxNVjVTdUdNSERpaWZuV3huY1VCcGtqUmtMYmN3Nmc4ejNoRVNieWx0QWtfVjh5Sm9zZUFwM3JBSnJ2aG8?oc=5",
-      "pubDate": "Wed, 30 Jul 2025 07:00:00 GMT",
-      "snippet": "Taiwan to buy over 100,000 military drones&nbsp;&nbsp;Defence Blog"
-    },
-    {
       "headline": "Red Cat’s Teal Drones sUAS Authorized for NATO Procurement & Allied Missions",
       "source": "Unmanned Systems Technology",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOEw2NVpyblNHNTZGMkFXMjBwY1ozUDVRZFE5b2tTNmlCNEJyWm5KVTJNbWNhODZTdERhWmpjbk0tOHJOS0x2aVRHVjZwRnVINldhS2JqQkEzbWN6TUlMZk9iUWFITGpMRktFWWpIdVA5UTlNNVdQbmtmS2hFVVhZUmxzZ2huaThFYVA1SG01dFBBSWpGUzVDYW4yU3BHVHkzTzI0Q3BKcE95TWtaZHphM05WN2RkalFIODZDaXNzQlZLZw?oc=5",
@@ -506,18 +485,18 @@
       "snippet": "Red Cat’s Teal Drones sUAS Authorized for NATO Procurement & Allied Missions&nbsp;&nbsp;Unmanned Systems Technology"
     },
     {
-      "headline": "Deere Makes First Investment in Farm Drones With Imaging Deal",
-      "source": "Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbUw2bTFKMlI2NEQ4S0NmMS1pUHE5SkcwNVBWUURSUGE3Z3gxOUVpOVJGYVAydnRLSFNsdEZsX3lWcmFnTV8wc1J4WmEzNnhneU5jeDRZY2pNaTVZWnBITC1sUTl4OER4MHVNSnJENm9Bc09ONVJfZ09zUUMwQ09DZG1Pa3Y3b3NHbThQMXplRDhLVVZhRGlzbWo0cl9naDF2LTlTQ3ZNLVZQZ1ZpcDE1OGJn?oc=5",
-      "pubDate": "Fri, 23 May 2025 07:00:00 GMT",
-      "snippet": "Deere Makes First Investment in Farm Drones With Imaging Deal&nbsp;&nbsp;Bloomberg.com"
+      "headline": "Taiwan to buy over 100,000 military drones",
+      "source": "Defence Blog",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9RQmkxZ2ZpTlpKcE5scWlnSTdwRlZHNGxkWDFtWGtjdnZLNWdLeXBqQjB3REhpYVREc2RUSEFPeHFRbWtFNzZVQkZJV2daMlN2MjhLVW1nd2hsTmVUUnJtUE83UGlKTXFMSzlvVHZ2Rkl1eEhKakHSAXtBVV95cUxONVEyLWJaaVk4MU9URU9EX2tRQ1U5YWE1c2VvMEJFOFB0a0xYcHZWN1lxSVlHTk5pRDUyMzZYSWxNVjVTdUdNSERpaWZuV3huY1VCcGtqUmtMYmN3Nmc4ejNoRVNieWx0QWtfVjh5Sm9zZUFwM3JBSnJ2aG8?oc=5",
+      "pubDate": "Wed, 30 Jul 2025 07:00:00 GMT",
+      "snippet": "Taiwan to buy over 100,000 military drones&nbsp;&nbsp;Defence Blog"
     },
     {
-      "headline": "European VC breaks taboo by investing in pure defense tech from Ukraine’s war zones",
-      "source": "TechCrunch",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMzI4LVlUaTRwN0h6aWtkaGJ2X0Rzb21ydjROYmxfMjY4MjVnek8wR3dVYzQxMDdsYVVvNkwtSENaRWJOUE1MZ0JlOXRiOFYzVE1MX3FvemVGcHZfdU5tZW5XX3JzWkJXRlpmUms5RUY1bjRJd2xZaTRnM2UzcERQZk5sdkdiSEJscTd2SDlCYnB3M2hWeXZuNkFOSDlPZlR1VTJNYXU4ME9Jem5PUmpMdE9pbzJkbTZG?oc=5",
-      "pubDate": "Tue, 08 Jul 2025 07:00:00 GMT",
-      "snippet": "European VC breaks taboo by investing in pure defense tech from Ukraine’s war zones&nbsp;&nbsp;TechCrunch"
+      "headline": "Deere Makes First Investment in Farm Drones With Imaging Deal",
+      "source": "bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbUw2bTFKMlI2NEQ4S0NmMS1pUHE5SkcwNVBWUURSUGE3Z3gxOUVpOVJGYVAydnRLSFNsdEZsX3lWcmFnTV8wc1J4WmEzNnhneU5jeDRZY2pNaTVZWnBITC1sUTl4OER4MHVNSnJENm9Bc09ONVJfZ09zUUMwQ09DZG1Pa3Y3b3NHbThQMXplRDhLVVZhRGlzbWo0cl9naDF2LTlTQ3ZNLVZQZ1ZpcDE1OGJn?oc=5",
+      "pubDate": "Fri, 23 May 2025 07:00:00 GMT",
+      "snippet": "Deere Makes First Investment in Farm Drones With Imaging Deal&nbsp;&nbsp;bloomberg.com"
     },
     {
       "headline": "Red Cat’s Teal Drones Black Widow System approved for NATO Support and Procurement Agency catalogue",
@@ -539,6 +518,13 @@
       "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0wcmNzRnMxNlEyaDJ2bFFVOFZLY1ZmOWk1dVF2ZUhzcTVaWW85aWo4dFdmTFVrcjRDdzdXN0NFQXRKdnNCa2fSAawBQVVfeXFMTzRxQzlaNE9Na2xTRVRBeTdXQ0s2a3Q3UmU5WGxSSWNKQVRqOFBJbFJaWlhxMmpZbmV4QlNzMVFOQjlfcXRvdVBoWkgwd2hBemZ3Sk05QXdXRnlZcFdmclRaMy1Cb2tBRHAyeTVYNXViVEtqSTcyenNzblZXVEFuLVJ1RW9IN0ZHbW1ha0JzdU5zRXJFWWFyVDZOX3dMalpvLWNUMDVnMWJ5V2tFQg?oc=5",
       "pubDate": "Mon, 21 Jul 2025 07:00:00 GMT",
       "snippet": "U.S. Drone Industry Investment Surges Amid Sweeping Legislative Reforms&nbsp;&nbsp;Dronelife"
+    },
+    {
+      "headline": "Defense Tech",
+      "source": "WilmerHale",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE82NWkxMHRMQkNHdXlYZ0p4VnFoV0c5bzJNODEybHo3ek9YS3dIMUs0cXV3Wm1uRElKZ2JnVWtmZ2NRYUd0a3VJU0FxeGJid0FpVndMM3VCR1FXM0EyQUZHMVBQUDFqVjRVdVg0cXloaXcyQjlQYnEyNDdwOTRVQQ?oc=5",
+      "pubDate": "Mon, 24 Mar 2025 17:06:11 GMT",
+      "snippet": "Defense Tech&nbsp;&nbsp;WilmerHale"
     },
     {
       "headline": "With the support of Smart and Autonomous Systems Council, Abu Dhabi Investment Office partners with EHang and Multi Level Group on test flight of passenger electric vertical take-off and landing aircraft in Abu Dhabi",
@@ -569,18 +555,18 @@
       "snippet": "Corruption in drone and electronic warfare procurement: court detains National Guard colonel, sets bail at US&nbsp;&nbsp;Українська правда"
     },
     {
-      "headline": "J2 Ventures: $250 Million Brookhaven Fund Raised To Scale Dual-Use Technology For National Security And Commercial Markets",
-      "source": "Pulse 2.0",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUlBPUmdWTjdVUkM5Vnp4YXBzczJLd3RMLWYzUkEzVjVzN2tWSW1wOXh3VzkzRGM0WVlFc2xYRWIydjNHMFQ5VnQzUVZsUUlYUUxyeEdJX0s1dXBaN2hheko3WERocFVlTzg0U2h4RTNqTWgtcjdGTGRnRi1UT0R4WVg2dGxwNnBTcXhEcC1LQ1k0QTN6NmlvMzNEakMwMDNwTUthemxRR2QydkpweDJFZUlBdEpoMEM2dDI0ZWhmbzdVblNhakhOTWJOeTdlNVFzZXpvX2VHNNIB3AFBVV95cUxQWG8xXzRtWTFKbFBLa1Fvc0ZydXlUZkZUNnd4M3U5dy1Gb19jWjZaWXQ1a2ZTdnpFcnB5bGVfTWhJQi1kTG9zTWpHN0ItN3cyVkUtQ2Q0SE1QTTlvTExEQ1FRajRwRGR2X2x3QkZBcVZFa09JQzZyd19FbzdlSmdwMElaZ01MaXY4ZXRNMmVLWWpRX0dzaU4tRTdDYlBacldoOF9TRFdVdmV2LVRPTHI3c2pGNldHdERqYnpFd0t3b1ZZRkJ0VWhrYVBITzZHSTFHZElJTDBHMGFERG9f?oc=5",
-      "pubDate": "Tue, 11 Nov 2025 08:00:00 GMT",
-      "snippet": "J2 Ventures: $250 Million Brookhaven Fund Raised To Scale Dual-Use Technology For National Security And Commercial Markets&nbsp;&nbsp;Pulse 2.0"
-    },
-    {
       "headline": "Ukraine shifts defense procurement to domestic suppliers, nearly all drones now Ukrainian-made",
       "source": "The Kyiv Independent",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYjVOZldsN2YxU012MVppR2N2bEs3QURqcjNnbllfY0xiQ29BNy02MU96bGRzVURGZmtEWllhR0FqZ0FkYVFjYVVDYWFiQnBOQ001cUpEY2o1YXZaNm1rX2dHeHhpUGxsSV9jenE3Z3BHQ1JONWRGTVR5UURyZ3U5N3JKaWI2UVU2RmJyd251ZE1RNDZkVkpERDJIMk9qd3BfR0JydENKenlnOU5LUkN5U2tqYnhzb29TN2c?oc=5",
       "pubDate": "Mon, 28 Jul 2025 07:00:00 GMT",
       "snippet": "Ukraine shifts defense procurement to domestic suppliers, nearly all drones now Ukrainian-made&nbsp;&nbsp;The Kyiv Independent"
+    },
+    {
+      "headline": "Israel Launches Major Tender to Boost Defense-Tech Investment Funds",
+      "source": "Israel Defense",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ESl9wb3JvUE9qUTBaVGdOTTJ4WE90VC1ncU8zOGYwbDRHU2RRWmRrQ0JlaGh3azl4cUVoNTUtTkpCeGdVeUlOdEVaZ2xZNTlHamF5UWxLRko?oc=5",
+      "pubDate": "Wed, 03 Dec 2025 08:00:00 GMT",
+      "snippet": "Israel Launches Major Tender to Boost Defense-Tech Investment Funds&nbsp;&nbsp;Israel Defense"
     },
     {
       "headline": "The Week’s Biggest Funding Rounds: AI And Defense Tech Lead With Massive Rounds",
@@ -611,18 +597,18 @@
       "snippet": "Taiwan seeks 48,000 military drones in US$1.5 billion procurement push&nbsp;&nbsp;digitimes"
     },
     {
+      "headline": "AVPL International announces $1 mn R&D investment for defence drones",
+      "source": "The Economic Times",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZmN0THBpc2VIRGdGem9wTkJOODhPSnFwZ1R2TmtUQWg0bDBEMERVYW54SUVkell6OXpyM190cUVLODRIdmFNOFhhMmx3ZV9hZFBBSUFtcVpaQ3VXNVFoSnJlaXllZ1AtZzIxdXViY3oyZFlRRjRmN0VkcEo1ZFl3Q0hnb0ItVVlERlE5N1ZwX3lSeUNBWVJuZ0pPVmNBcExUZnBVTEpGdlVoaFFvakNBNnhGSW1sMnhXOFdnTXBEUmYteFFVQW54aDg0TmVLQdIB0wFBVV95cUxOX1ZWZTRLS3JwNUhUYkFkM2wyZkQ3alZQOThLU2xNc2VYd1JaZWdUU2EwTV8wa2xSa0JjM0tiNzBvQm10ZjQ5T3d5dG5oWlRHdktDbzlRTmZtOWRkTVNrYl9VYlM4SnRXaS1EaG40M01oMFl2c0hxR0pDRFhKTnRjRFE3NDdIOWRDMW43emdMUHJEOVYzSjZWb0ZNZDBaNmlvTjlKUmYwMVlobFRLZUVjUXNyQlJTOW9jczN3ZWN4ZGpXdkpfSV95YVN6OGpDMEFYeFlJ?oc=5",
+      "pubDate": "Fri, 04 Jul 2025 07:00:00 GMT",
+      "snippet": "AVPL International announces $1 mn R&D investment for defence drones&nbsp;&nbsp;The Economic Times"
+    },
+    {
       "headline": "Arctic gateways or strategic backdoors? Foreign investment and Canada’s dual-use dilemma: Pauline Springer for Inside Policy",
       "source": "The Macdonald-Laurier Institute",
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQOUZjcDliQmtaQTNKQ3NEc2Z2c2VlR2VSeVJXVnkzSFVRc2xzbEFtaGhUaGVBVzZ5NmNIYVZfaVpLOVVkdk1vM1BwWk1wZVpEUjF1cGFjcmxjamg1bTVzaUZFcjVBYndlZXdKNUNOR0QxT1MySkdJZDZLVVFYTEp2UGJXQlllbHRISVVrVGlHOTI0YkVIQThFZm5BOFFOclAwZExoZHlvR3BOLWNNMHBxMm82dU9IMzI5cFVxUzNpRWNpOWhRNTl4bWlpR3J1OHQ2a0pqd3Q5Njgzenp4YVdPbFBlcXA?oc=5",
       "pubDate": "Tue, 07 Oct 2025 07:00:00 GMT",
       "snippet": "Arctic gateways or strategic backdoors? Foreign investment and Canada’s dual-use dilemma: Pauline Springer for Inside Policy&nbsp;&nbsp;The Macdonald-Laurier Institute"
-    },
-    {
-      "headline": "Israel Launches Major Tender to Boost Defense-Tech Investment Funds",
-      "source": "Israel Defense",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ESl9wb3JvUE9qUTBaVGdOTTJ4WE90VC1ncU8zOGYwbDRHU2RRWmRrQ0JlaGh3azl4cUVoNTUtTkpCeGdVeUlOdEVaZ2xZNTlHamF5UWxLRko?oc=5",
-      "pubDate": "Wed, 03 Dec 2025 08:00:00 GMT",
-      "snippet": "Israel Launches Major Tender to Boost Defense-Tech Investment Funds&nbsp;&nbsp;Israel Defense"
     },
     {
       "headline": "Avner Netanyahu Joins New U.S.-Israeli Defense Tech Venture",
@@ -639,18 +625,18 @@
       "snippet": "Defense Tech Venture Funding Gains Traction&nbsp;&nbsp;Crunchbase News"
     },
     {
+      "headline": "Hegseth orders military to ‘unleash’ use of small drones in new memo",
+      "source": "Breaking Defense",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV3NYWDdhcUM3aGJDNW8wcGd5UWdzNXRyMERlUGNHaXRsUkZ5WUtMMm1HOHBDb0xTUS1rWWRxVTlQSmU4LThJWkI2bmtfNWdRaHlhcS1rWUZ0MmRfTTd2QUNvclZCTURlMjdmU2JONlA4OGZ1YVI2aDFZYjh0aXQtU19maHl1c0EyTE10M1RDOUkxcy13c29paHZR?oc=5",
+      "pubDate": "Thu, 10 Jul 2025 07:00:00 GMT",
+      "snippet": "Hegseth orders military to ‘unleash’ use of small drones in new memo&nbsp;&nbsp;Breaking Defense"
+    },
+    {
       "headline": "Leonardo sets up military AI drone joint venture with Baykar of Turkey",
       "source": "eeNews Europe",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb3ZOLTRJQnM5VnRNbGZ6THBRX0hWNS1nRlQ2VWhpZUE5dWxqVzBSSjJRbzBPNEthclFLS1JsVy1lQUNCVEZNZDB4NkU4RHdaYVpvY1hpU3ZpcXcxWE1ucXFhYW9iZWtLUEhUUjN3Y0ZlZ0ZvNUJXMVU2U1ZwOFV3WU0xTGlUakxyZTBVbXFDQlFrbTR0czNkSzJqNW9fOFAyUHAwcXJn?oc=5",
       "pubDate": "Fri, 07 Mar 2025 08:00:00 GMT",
       "snippet": "Leonardo sets up military AI drone joint venture with Baykar of Turkey&nbsp;&nbsp;eeNews Europe"
-    },
-    {
-      "headline": "In defense tech, Lithuania’s sovereign VC fund is one step ahead",
-      "source": "TechCrunch",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdFltQXJMYUpkNWNLaTc3OTU5M2lZMHR3RzZLNWRsSHdCc2FkLUItcDlrVnNjWkctbWQ3SFhVZE1GcXZ4SDJuV01leXN4SFIzSTFIZmxBb0dMdHZWTG1oeUhlSjRPWFFRNXJiVWRUR3JPU3A5RVcyNGFpblBxeGM0bXMtelZhelk5T0lEV1BVRl9JVzlKRkVxMHdBaDlEdw?oc=5",
-      "pubDate": "Sat, 08 Mar 2025 08:00:00 GMT",
-      "snippet": "In defense tech, Lithuania’s sovereign VC fund is one step ahead&nbsp;&nbsp;TechCrunch"
     },
     {
       "headline": "Anduril tops 2025 CNBC Disruptor 50 list as interest and investment in defense tech booms",
@@ -660,18 +646,18 @@
       "snippet": "Anduril tops 2025 CNBC Disruptor 50 list as interest and investment in defense tech booms&nbsp;&nbsp;CNBC"
     },
     {
-      "headline": "AVPL International announces $1 mn R&D investment for defence drones",
-      "source": "The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZmN0THBpc2VIRGdGem9wTkJOODhPSnFwZ1R2TmtUQWg0bDBEMERVYW54SUVkell6OXpyM190cUVLODRIdmFNOFhhMmx3ZV9hZFBBSUFtcVpaQ3VXNVFoSnJlaXllZ1AtZzIxdXViY3oyZFlRRjRmN0VkcEo1ZFl3Q0hnb0ItVVlERlE5N1ZwX3lSeUNBWVJuZ0pPVmNBcExUZnBVTEpGdlVoaFFvakNBNnhGSW1sMnhXOFdnTXBEUmYteFFVQW54aDg0TmVLQdIB0wFBVV95cUxOX1ZWZTRLS3JwNUhUYkFkM2wyZkQ3alZQOThLU2xNc2VYd1JaZWdUU2EwTV8wa2xSa0JjM0tiNzBvQm10ZjQ5T3d5dG5oWlRHdktDbzlRTmZtOWRkTVNrYl9VYlM4SnRXaS1EaG40M01oMFl2c0hxR0pDRFhKTnRjRFE3NDdIOWRDMW43emdMUHJEOVYzSjZWb0ZNZDBaNmlvTjlKUmYwMVlobFRLZUVjUXNyQlJTOW9jczN3ZWN4ZGpXdkpfSV95YVN6OGpDMEFYeFlJ?oc=5",
-      "pubDate": "Fri, 04 Jul 2025 07:00:00 GMT",
-      "snippet": "AVPL International announces $1 mn R&D investment for defence drones&nbsp;&nbsp;The Economic Times"
-    },
-    {
       "headline": "These high-tech wildfire fighting drones were just backed by a $60 million investment",
       "source": "Fast Company",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYURIM1ZrOWNUZ2JlN043N0V5N1JldGdwc0RhZm84bDh2Nkl5OWhiZkxnTDE5cDBMS0hFeVFxZUtwdF9qLVkzMUszTmVLSnF6UExVT0lxcmZmUWdFa21RY0lEMVZONU9mSWZoMThjODR5MTRnWDV0Z3pSaWpyLWI2WlVhX3BEbFFsaDFWQ2l2a0szTnhLNmo3S0lMOHhTUVZURl9Hc3N1U1EtU0lkYmV1VkUxLUNaRjVtMllVeU1n?oc=5",
       "pubDate": "Mon, 20 Oct 2025 07:00:00 GMT",
       "snippet": "These high-tech wildfire fighting drones were just backed by a $60 million investment&nbsp;&nbsp;Fast Company"
+    },
+    {
+      "headline": "In defense tech, Lithuania’s sovereign VC fund is one step ahead",
+      "source": "TechCrunch",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdFltQXJMYUpkNWNLaTc3OTU5M2lZMHR3RzZLNWRsSHdCc2FkLUItcDlrVnNjWkctbWQ3SFhVZE1GcXZ4SDJuV01leXN4SFIzSTFIZmxBb0dMdHZWTG1oeUhlSjRPWFFRNXJiVWRUR3JPU3A5RVcyNGFpblBxeGM0bXMtelZhelk5T0lEV1BVRl9JVzlKRkVxMHdBaDlEdw?oc=5",
+      "pubDate": "Sat, 08 Mar 2025 08:00:00 GMT",
+      "snippet": "In defense tech, Lithuania’s sovereign VC fund is one step ahead&nbsp;&nbsp;TechCrunch"
     },
     {
       "headline": "Lithuania eases procurement rules to acquire military drones",
@@ -688,11 +674,25 @@
       "snippet": "Sora Technology, which tackles malaria prevention using drones, receives investment from Nissay Capital and others&nbsp;&nbsp;BRIDGE（ブリッジ）"
     },
     {
+      "headline": "Creating a modernized defense technology frontier",
+      "source": "McKinsey & Company",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaEJEblZkWU5DUzBaRU41MFdZTUk3d3FlRmhxOUNUbERVVjUtbEM2bUZnNXRBWlQ2WFlxekNiUVQ5Szh1S1pSUlFJWTVpZlo1Vk5NX1hKbnRYQXFPY1d4QzJoU0c1ekhLc0R3VVljbzIxY3g2dDNiejlmSkNLTFNYMGEtLWFBQ04tMTlaVUJscWhhN3N5TEItRWpiNDRFcm1PZjlyMUgzYk4tSHN1dW9rUGtFSEQzaG9YXy1kTA?oc=5",
+      "pubDate": "Wed, 12 Feb 2025 08:00:00 GMT",
+      "snippet": "Creating a modernized defense technology frontier&nbsp;&nbsp;McKinsey & Company"
+    },
+    {
       "headline": "New dual-use export control and outbound investment approach as part of the EU's Economic Security Strategy",
       "source": "White & Case LLP",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb0FyckhheWJLUVFZX1p2YVFzWEQzTmc4NE91RV9oZ1lvRzh5VFZOV0RkQWFLLVNzbzFwOHk5WTZpNThnak5sczJMQjhSQlcySkNTaW5kZXpLQURlNDQ1RGRXZXRTQVo1dG1DX2NjUEJ5akdPbGVPLVRYOWlYbG9pXzBkTUtFQUNNU2FTWVpUaXdTeTRPY3pielR0dVdLZWNFVFRqSEtGWHJBNC1jMnotRlJoWVU1bkJLMEE?oc=5",
       "pubDate": "Tue, 06 Feb 2024 08:00:00 GMT",
       "snippet": "New dual-use export control and outbound investment approach as part of the EU's Economic Security Strategy&nbsp;&nbsp;White & Case LLP"
+    },
+    {
+      "headline": "European defense tech start-ups: In it for the long run?",
+      "source": "McKinsey & Company",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaDdUQWxSWUhGQ0V3R2w1Y1hxTEdMNllHR3RiTmtEZmt2OG5Fc0xzN1dYNTVlTm53d1J3SWx4OFZhSHlZWlE2QjltR1p4MFctTDFUYW43TkRmeGJfVWVrQnVTMlNybktlTENKWFh4Y2RvcEdPejFYaEhjcWFuc2Y4UzI4NWtYZnZJZlhWbkdmOWJHVG8xd3UwdE5VUFpVYjAxNk1LM2tjaDNIYlh0SVJtWG1fZXlHc09MTjN1bkhQYUc4MXM?oc=5",
+      "pubDate": "Wed, 12 Feb 2025 08:00:00 GMT",
+      "snippet": "European defense tech start-ups: In it for the long run?&nbsp;&nbsp;McKinsey & Company"
     },
     {
       "headline": "AVPL International announces $1 mn R&D investment for defence drones",
