@@ -1,74 +1,289 @@
 name: Update feed.json
-
 on:
   workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
-
 permissions:
   contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Fetch RSS and write feed.json
         run: |
-          python - << 'PY'
-          import json, re, urllib.parse, urllib.request
+          python3 - << 'PY'
+          import json, re, urllib.parse, urllib.request, time, random, hashlib
           import xml.etree.ElementTree as ET
-          from datetime import datetime, timezone
+          from datetime import datetime, timezone, timedelta
 
-          query = '("defense tech" OR "defence technology" OR "dual-use" OR "military AI" OR drones OR "autonomous systems" OR ISR OR "electronic warfare") (fund OR venture OR investment OR financing OR procurement OR contract OR "innovation fund" OR "industrial policy")'
-          q = urllib.parse.quote(query)
-          rss_url = f"https://news.google.com/rss/search?q={q}&hl=en-GB&gl=GB&ceid=GB:en"
+          MAX_ITEMS = 15
+          MAX_AGE_DAYS = 60
 
-          with urllib.request.urlopen(rss_url, timeout=30) as resp:
-            xml_bytes = resp.read()
+          # ── Multiple focused queries instead of one mega-query ──
+          QUERIES = [
+              # Defense tech + capital
+              '"defense tech" funding',
+              '"defense tech" investment',
+              '"defence tech" investment',
+              '"defense tech" venture capital',
+              'defense startup funding',
+              'defense tech startup',
 
-          root = ET.fromstring(xml_bytes)
-          channel = root.find("channel")
+              # Drones / UAV — military & dual-use only
+              'military drone investment',
+              'military drone procurement',
+              'defense drone startup',
+              'Ukraine drone technology',
+              'counter-drone technology',
+              'FPV drone military',
 
-          tag_re = re.compile(r"<[^>]+>")
+              # Ukraine defense ecosystem
+              'Ukraine defense tech',
+              'Ukraine defense startup investment',
+              'Ukraine defense industry',
+              'Brave1 Ukraine defense',
+
+              # EU / European defense
+              'European defense investment',
+              'EU defense industrial policy',
+              'European defense tech startup',
+              'EU defence fund',
+              'NATO defense technology',
+
+              # UK defense
+              'UK defence tech investment',
+              'UK defence innovation',
+              'MOD defence technology',
+
+              # Regulation & export
+              'ITAR defense export',
+              'dual-use export control',
+              'defense procurement reform',
+
+              # AI & autonomy in defense
+              'military AI startup',
+              'autonomous weapons investment',
+              'defense AI funding',
+
+              # VC & funds
+              'defense tech VC fund',
+              'defense venture fund',
+              'dual-use venture capital',
+
+              # Space & satellite defense
+              'military satellite startup',
+              'defense space technology',
+          ]
+
+          # ── Noise filter: reject articles matching these patterns ──
+          REJECT_PATTERNS = [
+              r'spotify', r'daniel ek', r'massive attack', r'xiu xiu',
+              r'indie artist', r'pull.*(catalogue|music)',
+              r'copper extraction', r'antarctic', r'boat drone',
+              r'farm drone.*(imaging|crop|agriculture)',
+              r'deere.*(farm|imaging)',
+              r'wildfire fighting',
+              r'passenger.*electric.*take-off',
+              r'eVTOL.*(passenger|taxi)',
+              r'real estate', r'crypto',
+              r'stock price forecast',
+          ]
+          reject_re = re.compile('|'.join(REJECT_PATTERNS), re.IGNORECASE)
+
+          # ── High-value keywords for scoring ──
+          HIGH_VALUE = [
+              'defense tech', 'defence tech', 'defense startup', 'defence startup',
+              'drone', 'uav', 'counter-drone', 'counter-uas',
+              'ukraine', 'ukrainian',
+              'european defense', 'european defence', 'eu defense', 'eu defence',
+              'nato', 'aukus', 'edirpa',
+              'uk defence', 'uk defense', 'mod ',
+              'itar', 'export control', 'dual-use', 'dual use',
+              'venture', 'funding', 'investment', 'series a', 'series b', 'seed round',
+              'military ai', 'autonomous', 'autonomy',
+              'procurement', 'defense contract',
+              'brave1', 'defense innovation',
+          ]
+
+          PREMIUM_SOURCES = [
+              'reuters', 'bloomberg', 'financial times', 'ft.com',
+              'defense one', 'defensenews', 'defence news',
+              'janes', 'breaking defense', 'the war zone',
+              'techcrunch', 'sifted', 'pitchbook', 'crunchbase',
+              'business wire', 'globenewswire',
+              'the defense post', 'defence industry europe',
+              'kyiv independent', 'kyiv post', 'ukrinform',
+              'united24', 'ukrainska pravda',
+              'gov.uk', 'pentagon', 'venture capital journal',
+              'the information', 'axios', 'wall street journal',
+              'mckinsey', 'bruegel', 'science|business',
+          ]
+
+          DEPRIORITIZE = ['yahoo.com', 'msn.com', 'investingnews']
+
+          tag_re_html = re.compile(r"<[^>]+>")
+
           def clean_html(s):
-            s = tag_re.sub("", s or "")
-            s = re.sub(r"\s+", " ", s).strip()
-            return s
+              s = tag_re_html.sub("", s or "")
+              return re.sub(r"\s+", " ", s).strip()
 
-          def split_title(t):
-            if " - " in t:
-              parts = t.split(" - ")
-              return " - ".join(parts[:-1]).strip(), parts[-1].strip()
-            return t.strip(), "Google News"
+          def fetch_rss(query):
+              q = urllib.parse.quote(query)
+              url = f"https://news.google.com/rss/search?q={q}&hl=en&gl=US&ceid=US:en"
+              try:
+                  req = urllib.request.Request(url, headers={
+                      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+                      'Accept': 'application/rss+xml, text/xml, */*',
+                      'Accept-Language': 'en-US,en;q=0.9',
+                  })
+                  with urllib.request.urlopen(req, timeout=20) as resp:
+                      return resp.read()
+              except Exception as e:
+                  print(f"  WARN: {query}: {e}")
+                  return None
 
-          items = []
-          for it in (channel.findall("item") if channel is not None else []):
-            title = (it.findtext("title") or "").strip()
-            link  = (it.findtext("link") or "").strip()
-            pub   = (it.findtext("pubDate") or "").strip()
-            desc  = clean_html(it.findtext("description") or "")
+          def parse_items(xml_bytes):
+              if not xml_bytes:
+                  return []
+              items = []
+              try:
+                  root = ET.fromstring(xml_bytes)
+                  for it in root.findall('.//item'):
+                      title = (it.findtext('title') or '').strip()
+                      link = (it.findtext('link') or '').strip()
+                      pub = (it.findtext('pubDate') or '').strip()
+                      desc = clean_html(it.findtext('description') or '')
+                      source_el = it.findtext('source', '').strip()
 
-            if not title or not link or not pub:
-              continue
+                      if not title or not link or not pub:
+                          continue
 
-            headline, source = split_title(title)
-            items.append({
-              "headline": headline,
-              "source": source,
-              "link": link,
-              "pubDate": pub,
-              "snippet": desc
-            })
+                      # Extract source from title if source element missing
+                      if source_el:
+                          source = source_el
+                          headline = title
+                      elif ' - ' in title:
+                          parts = title.rsplit(' - ', 1)
+                          headline = parts[0].strip()
+                          source = parts[1].strip()
+                      else:
+                          headline = title
+                          source = 'Google News'
 
-          out = {"generatedAt": datetime.now(timezone.utc).isoformat(), "items": items}
+                      items.append({
+                          'headline': headline,
+                          'source': source,
+                          'link': link,
+                          'pubDate': pub,
+                          'snippet': desc,
+                      })
+              except ET.ParseError as e:
+                  print(f"  XML error: {e}")
+              return items
+
+          def dedup_key(headline):
+              norm = re.sub(r'[^a-z0-9 ]', '', headline.lower())
+              norm = re.sub(r'\s+', ' ', norm).strip()
+              return norm[:70]
+
+          def parse_date(pub_str):
+              for fmt in ['%a, %d %b %Y %H:%M:%S %Z', '%a, %d %b %Y %H:%M:%S %z']:
+                  try:
+                      d = datetime.strptime(pub_str, fmt)
+                      if d.tzinfo is None:
+                          d = d.replace(tzinfo=timezone.utc)
+                      return d
+                  except ValueError:
+                      continue
+              return None
+
+          def score_item(item, text_lower):
+              s = 0
+              # Recency
+              d = parse_date(item['pubDate'])
+              if d:
+                  age = (datetime.now(timezone.utc) - d).days
+                  s += max(0, 60 - age)
+              # Keyword hits
+              for kw in HIGH_VALUE:
+                  if kw in text_lower:
+                      s += 4
+              # Source quality
+              src = item['source'].lower()
+              for ps in PREMIUM_SOURCES:
+                  if ps in src:
+                      s += 12
+                      break
+              for dp in DEPRIORITIZE:
+                  if dp in src or dp in item.get('link', '').lower():
+                      s -= 20
+                      break
+              return s
+
+          # ── Main ──
+          print(f"Fetching {len(QUERIES)} queries...")
+          all_items = []
+          for i, q in enumerate(QUERIES):
+              print(f"  [{i+1}/{len(QUERIES)}] {q}")
+              xml = fetch_rss(q)
+              items = parse_items(xml)
+              print(f"    -> {len(items)} items")
+              all_items.extend(items)
+              time.sleep(1.5 + random.uniform(0, 1))
+
+          print(f"\nRaw total: {len(all_items)}")
+
+          # Date filter
+          cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+          filtered = []
+          for item in all_items:
+              d = parse_date(item['pubDate'])
+              if d and d >= cutoff:
+                  filtered.append(item)
+          print(f"After date filter: {len(filtered)}")
+
+          # Noise filter
+          clean = []
+          for item in filtered:
+              text = f"{item['headline']} {item['snippet']} {item['source']}"
+              if not reject_re.search(text):
+                  clean.append(item)
+              else:
+                  print(f"  REJECTED: {item['headline'][:60]}...")
+          print(f"After noise filter: {len(clean)}")
+
+          # Dedup
+          seen = {}
+          deduped = []
+          for item in clean:
+              key = dedup_key(item['headline'])
+              if key not in seen:
+                  seen[key] = item
+                  deduped.append(item)
+          print(f"After dedup: {len(deduped)}")
+
+          # Score and rank
+          scored = []
+          for item in deduped:
+              text_lower = f"{item['headline']} {item['snippet']} {item['source']}".lower()
+              s = score_item(item, text_lower)
+              scored.append((s, item))
+          scored.sort(key=lambda x: x[0], reverse=True)
+
+          # Take top N, then sort by date
+          top = [item for _, item in scored[:MAX_ITEMS]]
+          top.sort(key=lambda x: parse_date(x['pubDate']) or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+
+          print(f"\nFinal items: {len(top)}")
+          for item in top:
+              print(f"  {item['headline'][:70]}... [{item['source']}]")
+
+          out = {"generatedAt": datetime.now(timezone.utc).isoformat(), "items": top}
           with open("feed.json", "w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False, indent=2)
-
-          print("Wrote feed.json:", len(items))
+              json.dump(out, f, ensure_ascii=False, indent=2)
+          print(f"\nWrote feed.json: {len(top)} items")
           PY
-
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
