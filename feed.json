@@ -1,13 +1,6 @@
 {
-  "generatedAt": "2026-02-23T17:37:42.456500+00:00",
+  "generatedAt": "2026-02-23T18:59:10.508471+00:00",
   "items": [
-    {
-      "headline": "Training, logistics and property accountability: Army preparing for influx of small drones - Breaking Defense",
-      "source": "Breaking Defense",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSWM4eWhra05xeEtEQjV0ekhXUWZjTDFPYkZvazNFb0s2V015VFVwWVZPQU5TbWtWYzJ5YkFvVVRScFVfend6anMzZnNTbG5vQWtNQXhEZzJGb0h5MDlsWFdjMzA2TlBIR0gxdkx4elZsVS1LWU40YVZ6MExza2pXVGxLSlFDVkJ6TEdPTVFHYkFEUGpraXlCQXlKbzJuRmFZSC1DUG56bTc2cTBzTXU3cW1KZFNFclN1dWFQSk10WGdnWXM?oc=5",
-      "pubDate": "Mon, 23 Feb 2026 17:06:41 GMT",
-      "snippet": "Training, logistics and property accountability: Army preparing for influx of small drones&nbsp;&nbsp;Breaking Defense"
-    },
     {
       "headline": "Ukraine Turns Hackers and AI Loose on Its Own Weapons Marketplace to Hunt Cyber Threats - UNITED24 Media",
       "source": "UNITED24 Media",
@@ -35,6 +28,13 @@
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQ1VBVnpYVjlSRGlQZDJBNXdCMlBYTU11di02X2lRZXZGZUZHbzVwNEpGQ1RaVEduUVp0Z3JKTE1fdXgyY2dVanpBOFdiU3dqRzUya2J0RlhMbWQ5VWNsTG4wNXhEeV8yWVNiMmFWQmMtWlJyUURJektwallzRkRiNXMtMnpSTDN1Y1VjSElkdWdSbWJnMjZndVAyV21DajVZWk9pZUwwcDVhVDhlZGM1Uk5WdFVpeGpnS3F3M0J4bTJPY1VTRWEtSDlnLTJhZw?oc=5",
       "pubDate": "Sun, 22 Feb 2026 13:07:37 GMT",
       "snippet": "Ukraine proposes joint European anti-ballistic projects and urges sustained PURL funding for air defence&nbsp;&nbsp;Defence Industry Europe"
+    },
+    {
+      "headline": "Russian army attacks Nikopol district at night with artillery, Grad MLRS, and FPV drones - Ukrinform",
+      "source": "Ukrinform",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZEZ1d21URkd2b21jaW1JOFRiSGl2NkpVa3daSlRMNUFfVnRwY0k3QnRoM0ZoQ3pyMlhZZUhLUXM4NUFoTzdyTWZ0UGxkcUl0WUR3aWlnY19Td3RMSDJDdDZWeG1va1I0cnJ4UTlLazAtcklVRVlpWkVCWGFDbDN1RG9uWUJQWHFISFdRR2xpSVROVEdWVEp2Y3dqZVB4RzluZ3JCeU5NUGsya0NaQUxNZnd5M2pVMWZ5US12anZHYWVMdnEwYV9TVjFwc1ktT3FKdkHSAdcBQVVfeXFMT2NGSHBwMVdydFhiSWl0Rk03WWktb004OEY1b2hqYU5EMnBvTTAwTXRGT0NRUDVLNFdwZlV2SGJ1ZWN5NWc2aHhnYm5Td2NaT3VsaUxiNDZoZTdBYnF5Sld0T0ZjaFd3Q0tqTEJ4N3dTLXowNkplWEE0eFdRUHdRX1ZVLTdIUEtXRXFSUVBCTFpoTzFjSU5MNnpNM19CZXZOUUhoWFVOVEhXUXNIOENZYUF5V051X0ZZNXdpeFpsZGF3bkNINXBWY1NmdkxSSUhGS1h5RUE4Tm8?oc=5",
+      "pubDate": "Sat, 21 Feb 2026 08:03:00 GMT",
+      "snippet": "Russian army attacks Nikopol district at night with artillery, Grad MLRS, and FPV drones&nbsp;&nbsp;Ukrinform"
     },
     {
       "headline": "Ukraine Could Export Billions in Military Goods in 2026 After First Wartime Foreign Sales - UNITED24 Media",
@@ -95,7 +95,7 @@
     {
       "headline": "AI Defense Startup Breaker Raises $6 Million in Seed Funding - The Wall Street Journal",
       "source": "The Wall Street Journal",
-      "link": "https://news.google.com/rss/articles/CBMinANBVV95cUxPMlNXT2xCY2xqUkZISXEwbUdlMzhPd0Zhb2ZMeUpBZGRDb3ZGUV9RdjBST1p4VWF5N3hTTWxNMWlUd2F0YVNhYTZ2RWp2WmV5bXdHMEhMUWFyaUV2U3paZnhhWlhPcTFXSjBISVk0clZZNkN3b2NQSHlSNXIyOHZIZ2FURnBoaGVUeUlkQVRBMU9rUTBoRXliOFBJLUxOYUR2VmdZYVJIUUtqLWFYTUlud1RNZVBlRy1QRTdIY3dZT2VxVkN6b0o3ZmZBTnJxUEgxRlhPaGtfR0pMemNiNUhHWURiTkpwSGdqTkFqa19xWDlxeHFPb2U3TTh0dV9fWUwweHJzVndmLXp0cW1SWkdOOVNpV1ZiVDFLLVVtaTQ0Sms1WnBQdnlmenpPaG1uTXNhaEZtOEpSck9FUUVQSVZhaWtjRU1yY2U3bUtwVzh3ZEtrei1ZWmR2dlgzS3JlQjduYnNuU0F1Q3cyRmp0ZHdtSlN6dzJWNWdzWGZtRzJoX0k5UVdTV19KQ2RjQ0RJeE83UU9PWTliZFBxVHFo?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMinANBVV95cUxQb0FucVhMd1NJM3FNcHhTWEJ1ZDdpendmbEpLN0ZxcVRaMmExdWtPeFN3bGhhZE5uM1l2ZDZkaWVXV010cjZJdDF2Mm9ncVBtdzNDUEZXaEluYWRCZzhKMmVjTE5QdlZ5bGlJd0FiY2FqdWxpV0NDNzJ4X2Nja3g3QnpnUm5rb0NmWHJ5R3FkeTBJaUxIeUp2eFZ5Z0NPSm43cmx3bUFyMTRJUjFsTmJxRmdQWE5tTk1FTFZPN254dnFxNXg1N3VteS1Ia0pYZ25iZi1ZWERFRno1d1g3eTU3eV9zLUZyS3l5d1Z4ZVZSNDkxc3ZqMEp6bnRxU2hCTGF4QVI4cHdxVDh4bEZzajhSdmxoYkdvaHBQbldtQmZwYVhTb1dRa1RCRzVJaU9oYTVtM0ltaDZxUFFjYVQ5d1l4MnVYZng5UEFwcTVCbzRmVExKZmxDWHNmSWtGZXBtNHczcHEtOTFOZk1FVjJQdy1XVWo0T0xfNVNuaTZRNVRiM2FLTzdzeF9Id3Q0a2wxX1dPOHlVcldxd2w5ZzBZ?oc=5",
       "pubDate": "Tue, 17 Feb 2026 01:19:00 GMT",
       "snippet": "AI Defense Startup Breaker Raises $6 Million in Seed Funding&nbsp;&nbsp;The Wall Street Journal"
     },
