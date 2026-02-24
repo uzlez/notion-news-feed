@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-24T17:55:01.699348+00:00",
+  "generatedAt": "2026-02-24T18:57:44.500622+00:00",
   "items": [
     {
       "headline": "Russian Military Units Receive Financial Rewards for Targeting Ukrainian Forces With FPV Drones - UNITED24 Media",
@@ -51,13 +51,6 @@
       "snippet": "EU unveils plan to support new drone technologies&nbsp;&nbsp;Science|Business"
     },
     {
-      "headline": "China imposes export controls on 20 Japanese entities to curb ‘remilitarisation’ - Reuters",
-      "source": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLUxhUHkyVkVGa1UzNlh6VEQyc2ExdmV6WWRSd2NoQWdQNE1ZZ2QwczhjbWhYZkYzd053R2FVcTg4TlhvV0RuYzNoTnVhY3lwQ2tQUHVjcUhFb0pyTXVpY0JHSERHckRLUUJHUnQ5UVc0SjNTS0JEMzlsZ2ZpX1RDYTZNWG9MUks4RWVPY0Z5eW9tTEx2QVVlRTUwTGpoc3FDbGZ1MXpEVFdyQQ?oc=5",
-      "pubDate": "Tue, 24 Feb 2026 02:27:42 GMT",
-      "snippet": "China imposes export controls on 20 Japanese entities to curb ‘remilitarisation’&nbsp;&nbsp;Reuters"
-    },
-    {
       "headline": "Diehl Defence unveils GARMR mobile counter-UAV system with AI at Enforce Tac in Nürnberg featuring interceptor drones - Defence Industry Europe",
       "source": "Defence Industry Europe",
       "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRzN1b0h4N29zeGh5QjhaSG1ST0kweFFGdG42b2VjdGhySWhsU1dMM3RpT0ZVQW1LeE03M3pTYjlBRkJENXNqNVRoWldBeXY4OGlXTjFJVF84NU9VZUVsSXVGZXBrck4ySVh4OVZUTTdZemFaeFVNZXdfd3czZ3JqZlRaLUU4eDR6X29UNWwwY1BOX05yZW95ZlVzczFqUGpDTTJPdjFiMmg4STBkUTVCamlRejBQYVViMnlsdEd4Z2NMOU1CNXNxRzRMa3cxX1FFN1dsdFVnZGtjWUtqRVFj?oc=5",
@@ -70,6 +63,13 @@
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSU9IREdhUVhyX2lkUFNURzJCQkY2cXZvTkFmTkdZR3lpY3N6aU4tMjFhQURZUVJScEpmck1YdF9ReG1ZTGRYaHRVQ25QMkJrMXQybHhpanNfeHg3ZjdyYlZCWjhXTUViM3FlZnNSMUtnZnlKbklJVkpKTnpXd0FWeUd0SlZnRWt3RDRjb0F5Y1JBdFBRZGd1eElqYlFFMXA2WlFsNmUzWmtpb0x2NXFsMWVBS0FHcTI4X3BZbndjOXB1YTA?oc=5",
       "pubDate": "Mon, 23 Feb 2026 09:56:04 GMT",
       "snippet": "Blackwater Founder Erik Prince Joins Ukrainian Startup to Unleash AI Drone Swarms&nbsp;&nbsp;UNITED24 Media"
+    },
+    {
+      "headline": "Inside Ukraine’s ‘kill zone’ - Financial Times",
+      "source": "Financial Times",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE02RVkzcTRhV04ySy1EU0kxeGJxUlBxWVE1Tk5nazJfRXFEMkpSMUY0NEtualdTeUZfRzJwYnJRdV9oaWFwM3EtNWI5dw?oc=5",
+      "pubDate": "Mon, 23 Feb 2026 05:00:00 GMT",
+      "snippet": "Inside Ukraine’s ‘kill zone’&nbsp;&nbsp;Financial Times"
     },
     {
       "headline": "Ukraine proposes joint European anti-ballistic projects and urges sustained PURL funding for air defence - Defence Industry Europe",
@@ -93,18 +93,18 @@
       "snippet": "Ukrainian, Italian officials discuss strengthening Ukraine's defense industry&nbsp;&nbsp;Ukrinform"
     },
     {
+      "headline": "Military drone plant opens in Arkansas, drawing protest - Axios",
+      "source": "Axios",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNW5kaHpmR2FjNVlRYlFhWDV2WHBEd25teGl4Ulk4VEV5VkxlaHFmSnlBWXhpRlFUTHRoLWlpX280cXNEU29wdnRLbGoySW1GNWtGM3B1aTZ2ZS1WU1VQS2IyYURNZWw0d2d0MW94WFg4Z0NlYWxWWjlRQ0U0dFBSVThwalhjRExyUVBZdkVCdmtYcGJwaGdkdm9oV0JjM1VpdmR5OXBn?oc=5",
+      "pubDate": "Thu, 19 Feb 2026 07:56:21 GMT",
+      "snippet": "Military drone plant opens in Arkansas, drawing protest&nbsp;&nbsp;Axios"
+    },
+    {
       "headline": "Latvian University Joins NATO’s DIANA Network to Accelerate Dual-Use Defense Tech - The Defense Post",
       "source": "The Defense Post",
       "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OX290Qlo1ZTY1MERSMng3eDJzSUNIemJGNmJDVEdYcWhQbjdndVhMdWwxQ1FxN1Z1TFpJWTNZYnc4V2tLc0haSnpPalkzR2NValI0TVBmM1VZems3NHdYMDFNOGdudDctcjV0MV92bFFOczTSAXhBVV95cUxPbkpldzB6VnlLLWl2TV9yeXhWVkhYM3VDeW12OERmVDlIUmYwNEEwMjFTUVB5dEhaUjVRdVVzWDU1MVh1ZjdFUUpfX1dkS0dOanVsMnRkdXdBT2dKUVo0WVlmWXU4NDNhQmFFaXZtV0J2MmZfODJVZ18?oc=5",
       "pubDate": "Wed, 18 Feb 2026 10:28:33 GMT",
       "snippet": "Latvian University Joins NATO’s DIANA Network to Accelerate Dual-Use Defense Tech&nbsp;&nbsp;The Defense Post"
-    },
-    {
-      "headline": "Ukraine’s The Fourth Law Secures Investment From Axon to Scale Drone AI for Frontline, Air Defense - Kyiv Post",
-      "source": "Kyiv Post",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB3VUZlSkNRdTBXaHJaWThsc3VIWng2RWhjRGdSVkd0RFZMQUEwN0otemVzRXpPcVkyYUYweEFPbWlhNzY5Q2FxNVNuVQ?oc=5",
-      "pubDate": "Tue, 17 Feb 2026 10:55:53 GMT",
-      "snippet": "Ukraine’s The Fourth Law Secures Investment From Axon to Scale Drone AI for Frontline, Air Defense&nbsp;&nbsp;Kyiv Post"
     }
   ]
 }
