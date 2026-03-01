@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T14:49:13.580375+00:00",
+  "generatedAt": "2026-03-01T15:20:26.280147+00:00",
   "items": [
     {
       "headline": "White House Hosted Meeting on Recent Use of Anti-Drone Lasers - Bloomberg",
@@ -7,6 +7,13 @@
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcGk0MFNmbTZLc3gzLXhkc0dDaU5uUG9hUEF0bWVqa1FPU3hIWHB1VlA1T05lenlZYjd4dlh2a2dfWnhSbEI5elE3dFgtQXAyZlBmT3ZlTkRXOTk3U3g1TXVDZUtoTW0zdDFqME1NeEpFem5vMWZfZVpwZnlnV3YwNGJwX2Q5ME5ySmtEYXZ0WDA2WjdSZXB2dWJnZDMzREptWnpIaTdKMlc4azFIVU9xZGxn?oc=5",
       "pubDate": "Fri, 27 Feb 2026 19:50:21 GMT",
       "snippet": "White House Hosted Meeting on Recent Use of Anti-Drone Lasers&nbsp;&nbsp;Bloomberg"
+    },
+    {
+      "headline": "Fincantieri, Navantia Launch Joint Venture for European Patrol Corvette Program - The Defense Post",
+      "source": "The Defense Post",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUFhRMHBTdUM2VmVhanI3ZGZUYl84bjJxWlRLMUNCSDNtZlJtYl9nNUpIZWVISFJsY0lkRWtHRmk2QTV5QmpJLUh4N1pVZENxUDY2X21CSmVQT3ZkSTZrOWdJU0tNSUhxS2FmMUVlcEJELTlpMUVUXzd4RHg4dE5xV9IBhgFBVV95cUxNNW5GZTY1OEQ0UGt0SDdCRy1KTS1tTlViclBKYllfc0xJVGhUVkVmQ0RlS3hTdmFmTDNZYnpoN3gwQW9Xb0VKbnFJMzBXTUhCLTdLY0xsSkRfWmtockdfVi1iVENfczd5YUtYbEtsQkFfMDd5ZTloZTVmMGRTTl9PejlOX01Zdw?oc=5",
+      "pubDate": "Fri, 27 Feb 2026 14:54:19 GMT",
+      "snippet": "Fincantieri, Navantia Launch Joint Venture for European Patrol Corvette Program&nbsp;&nbsp;The Defense Post"
     },
     {
       "headline": "Sector Snapshot: Space Tech Startup Funding Still Flying High - Crunchbase News",
@@ -30,13 +37,6 @@
       "snippet": "Ukrainian Drone Maker Skyfall Eyes Production in Denmark&nbsp;&nbsp;The Defense Post"
     },
     {
-      "headline": "Ukraine and Ghana Begin Negotiations on Defense Cooperation Agreement - UNITED24 Media",
-      "source": "UNITED24 Media",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORVJWMXk5bmxPcHRaZzdWRGp5YjRWQXZTbjJYVWJOVGxSTXlycFN4T2NZWEZSUXJrSUZFYk81SlE0RkpMSGlSU0t5VlNNTHFSeHVpYXQwMXFWd0g3Nm1UcVpiVjI2RmRQR2Z3d3h6dTN3ZkR6WkJ2am1mRThrOWYzM1NlZkxhNlZBSE40Zktlc0N2Nnl5ZENQX1hPRlZqX01uZmtTZ29IOVRuTXdZOGNFMzhJWQ?oc=5",
-      "pubDate": "Thu, 26 Feb 2026 10:17:32 GMT",
-      "snippet": "Ukraine and Ghana Begin Negotiations on Defense Cooperation Agreement&nbsp;&nbsp;UNITED24 Media"
-    },
-    {
       "headline": "Autonomous Warship Startup Saronic Raising at $7.5 Billion Valuation - The Information",
       "source": "The Information",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUlNEb1ljLWJtWkk3ZjRwMU9ZMkNQSFBvTExnUEFsYUtQeVFNVm5LSTBsekhNdE45clA0dGpoT0h0SlI5YWRpeVdVLW9BREFnWkYtSFY2THRHeTEzZ29iSWpScHJsNWtCZ3RaazBWZWZQNlJFM211eXh6NXBUekZya0preUh3N1FXSGVMNFN4bzBPMDh2a3ExOVVpSjFOZlJSVzFDLWRZYw?oc=5",
@@ -58,18 +58,18 @@
       "snippet": "Ukraine, France to Launch Joint Defense-Tech Startup Grant Program&nbsp;&nbsp;Kyiv Post"
     },
     {
-      "headline": "Four Ukrainian defense manufacturers sign EUR 800M partnerships with European arms companies - Ukrinform",
-      "source": "Ukrinform",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOelBHdlZSLWNJVjFEMWFnZENzYkhVM0dZYmU0ME9nUlBCdHUwX1FDaFpHd3N2V292MFdIZUZkTzQ1SUl2cEVzNUFqcF9pdWhzWkZhMlMtYXJIdUV5WjdfclhISTFYUDc0cEEwbDNjTVc0MlZ2ZG9yS2IzeDZEMXdRTzBkaWN1aVBUdVJzSF9GLXNVcjRNODA2UlF3aWdpN2V5T3E2YVpIdzlkZU5HVDl6MUdVZWFTb2x2MlcwR3JFVm9xNHpkOFpHcUpnSEVQUXVmNTBlb2ZlRGJhNldzZ01R0gHkAUFVX3lxTE9kSjlSX18xWmdhZ2N2UmV4UDV4Z1MtQlNvZjh0Q3MydXlYT1hmYl9PODdsT1V5STlOWEdMUHplWmVoNzlDNUppamthT0hXN2N1RjBHYWo5SnFOaTk5VWZKQXNiZVlvQ2gxVFVzVEpOU3ZBOXNZLTREelNEV2tUa3cyYUlBelhZZDVNbl92MWFwTXhiTXpmVGxEai1wRVpiMG93NUpUZ3ZLLUJ2eHdKcGsyZml6aWJNdUlSZ2Vwc0s4Q2RjYXRjcVM4S3VfZnlCM0traUtIUWs5TWoteVUwUktkczVVaA?oc=5",
-      "pubDate": "Wed, 25 Feb 2026 16:00:00 GMT",
-      "snippet": "Four Ukrainian defense manufacturers sign EUR 800M partnerships with European arms companies&nbsp;&nbsp;Ukrinform"
-    },
-    {
       "headline": "Ukrainian Defense Factory Opens in the UK, Offering Drone Solutions From Frontline Experience - UNITED24 Media",
       "source": "UNITED24 Media",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNY2tHXzkwb0hLSUpvR21GU1RaVWhFUWpPakNyVnpYUEo2MGVjVC14TUxiaWRmdEgtVU1RLXlORU5rbWJnQWg3QlYxczk4S0FudjhRSk5GODBERjc3ck5jNjktSHJEMGExbHF2TXpBODZYcFc1Q0UtTHZDSEFackhmaVdkR2duWnU2RXNiZWpIQ083ZFFGcW1uQ0k0TG14aF8tQ3ZsemZUeXhhSTZZLVExRkJiTWw3TmdraEFiTjR1M2dCVEJmOXR4M0JJOFVTMzVUR3c?oc=5",
       "pubDate": "Wed, 25 Feb 2026 14:26:19 GMT",
       "snippet": "Ukrainian Defense Factory Opens in the UK, Offering Drone Solutions From Frontline Experience&nbsp;&nbsp;UNITED24 Media"
+    },
+    {
+      "headline": "Denmark and Ukraine Launch €33 Million Military Training Overhaul - UNITED24 Media",
+      "source": "UNITED24 Media",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQakotRGpSMUJRTDRZVW5EUXhEblJSV3NUNElRZ3dpQ0NKSE1vME8ya0l6eFI1MFlhTDR1U0xSRElnR1pyWEd0Z0d3WXJfbU9jdDlSdkhDbFBKdU5wOWQ4WlVGd1VmaUVBZXkwNU4yXzZETWc3VXlic0JoV2gxeTUwbUJhMDdDWXhQYWNvZy1GMWtMX2o5VzgtVnRITVhOb1BUYlZaLVpsby1pMnFnS1ZiNHpDRUI?oc=5",
+      "pubDate": "Wed, 25 Feb 2026 14:12:00 GMT",
+      "snippet": "Denmark and Ukraine Launch €33 Million Military Training Overhaul&nbsp;&nbsp;UNITED24 Media"
     },
     {
       "headline": "Ukrainian UAV Manufacturer SkyFall in Talks to Bring “Vampire” Production to Denmark - UNITED24 Media",
