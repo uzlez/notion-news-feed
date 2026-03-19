@@ -1,13 +1,6 @@
 {
-  "generatedAt": "2026-03-19T22:25:12.316331+00:00",
+  "generatedAt": "2026-03-19T22:56:29.497166+00:00",
   "items": [
-    {
-      "headline": "Hoping for liftoff - Venture Capital Journal",
-      "source": "Venture Capital Journal",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BYzgzY0djZjZmQ2sxb3BmT3RNSC12RXNDcjlVNGY3SUl0ZFlXYUtWbldVNWpqVzdfSVFpOUdRVk9ZbGN1R1FERlJDZEdHYzZ5SExibVJoQVc4Wnl0LUNHSWxsZmtzb3lh?oc=5",
-      "pubDate": "Thu, 19 Mar 2026 16:35:10 GMT",
-      "snippet": "Hoping for liftoff&nbsp;&nbsp;Venture Capital Journal"
-    },
     {
       "headline": "Lockheed Martin selects Fortem Technologies to deploy autonomous counter-drone systems for critical infrastructure protection - Defence Industry Europe",
       "source": "Defence Industry Europe",
@@ -23,6 +16,20 @@
       "snippet": "New UK Tech Takes a Different Approach to Drone Defense&nbsp;&nbsp;The Defense Post"
     },
     {
+      "headline": "After Swarmer’s Soaring Debut, Here Are 12 Other Potential Defense Tech IPOs - Crunchbase News",
+      "source": "Crunchbase News",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOUthMWt2SklCa1RzQUJ0THc0ams4aXRCcjRfNnI4cHhsa28wSjFuWUJ4TjZ2aUQ1czRWUzUwVUh2VXF2emJKdzh2Q1EyX2docWh0TU9yUDh1WFliV3VzQVNuQk5GX0NEUGNNOV9UN00xb0Z6d0YwVWN1T09zdlRPU2VqN1Y?oc=5",
+      "pubDate": "Wed, 18 Mar 2026 20:20:54 GMT",
+      "snippet": "After Swarmer’s Soaring Debut, Here Are 12 Other Potential Defense Tech IPOs&nbsp;&nbsp;Crunchbase News"
+    },
+    {
+      "headline": "Tiny AI Drone Technology Company Surges 1,000% in Two Days - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObDVGU3FLTnRLTHpWNE51ekxOLWFybF9ZMWNsMFoxS3VLY0owcGFyS0UxQW8tNHpxVmVsREk3a2dkbVNkeUp3QXhVTW9mTm1zaWZzLXFsaEZsbWdRYnRVbG1PLVJnaklLOXlHNUFPRHRES3hpZWJaamtCcUVIZURBajZVRXhURlZfcFN4WFg5amJ5Z240X2dUb2ZRYmFxbk1FWGxnMW9TcXFEeC1B?oc=5",
+      "pubDate": "Wed, 18 Mar 2026 20:19:22 GMT",
+      "snippet": "Tiny AI Drone Technology Company Surges 1,000% in Two Days&nbsp;&nbsp;Bloomberg.com"
+    },
+    {
       "headline": "Blackwater founder backs Ukrainian drone tech sales to US - Reuters",
       "source": "Reuters",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQd2tBQ0JXNEpsVmhnYm8yeGJPdjVOYV9YY1pHbk92ek55YUNnRm9rekdzbFQxdVRLQ2NiOVo0ZXFmQlBxT0JCZzNhQ2xRZVhCU1VGNGJaN1RVclJnWXB6YmVEVHRLT3labVRnc3BiTEFSQXpGa3B1TkZnbWpJVEtTT1E1bndwSWpuZkxQMGpEY2Y1TFlXeFFJMTYtajhFSVRORVhv?oc=5",
@@ -35,6 +42,13 @@
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE13RFRyOHY5c3VKcnFCQW1GRXc5dW8xQmJWODBCbWhFTGFnX2Q3UlotdUpVNXhRN2RVMFZvUVVXN0lpYVVDV3JIZ2JYMA?oc=5",
       "pubDate": "Wed, 18 Mar 2026 15:28:28 GMT",
       "snippet": "Spain to Provide €1 Billion in Military Aid to Ukraine in 2026&nbsp;&nbsp;Kyiv Post"
+    },
+    {
+      "headline": "DroneShield partners with Robin Radar Systems - Defence Industry Europe",
+      "source": "Defence Industry Europe",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kR2NVSjRLRF9qMURMQUpSS1NmQl82VW8wT1hXRm5QQ1JnS0RhN0NyU25uVVZTSk1CUWJsdlM3Z0RMQS1XYmt0RVJhaTNibmx0bjZCLVNwaHNTTEJJbERhX19WR0RHNU8tbDI5aFFWRmxNN215a2YyMG1MR3IzZW8?oc=5",
+      "pubDate": "Wed, 18 Mar 2026 11:57:43 GMT",
+      "snippet": "DroneShield partners with Robin Radar Systems&nbsp;&nbsp;Defence Industry Europe"
     },
     {
       "headline": "Amid Iran war, Ukrainian drone makers fear Zelensky risks missing 'window of opportunity' - The Kyiv Independent",
@@ -84,20 +98,6 @@
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOeER2UHU2alY0WXQ5WTJtdThOckRKbEpzX1NHbkNZWEpTQ2djaS1keHBKN2RhWF91QzVsV3NzUDVxX0x2NURPYXNtZ1dPR3VlNDFCUXFrOExOa3dZV21OZHRza25KRjB5QzNCeV9Eak02YTY2WVBaTFM3T1JKRVdWZ3J6NVpfLVVnOHA1ZWlSRkJJb1RpUUtOT20ya2dSNVNvSnlDdXpPTDJ4YXV1Ny1MaGFybmVCMWotS3NVcTlqbWt1aTI3SlU3ZTN6MlEzaXN5bG1wR19RbzdLVy1hUm5UaW5nTDRmOVU?oc=5",
       "pubDate": "Mon, 16 Mar 2026 11:41:59 GMT",
       "snippet": "Indra counter-UAS system deployed with Spanish forces in Lithuania draws growing interest from NATO eastern flank countries&nbsp;&nbsp;Defence Industry Europe"
-    },
-    {
-      "headline": "Ukrainian Drone Maker Wins Pentagon Contract in “Drone Dominance” Program - UNITED24 Media",
-      "source": "UNITED24 Media",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDhkY2FNYTVERV9BcktneGhGUTRCZkZ2MF82UWRkZVNKTDEzMldYRHVLWXZxTmxtWTVFejdpUjV0UG9yeTZBS0tMMUVIMWlyR29JeTZtNTRPdEZqbUJIMmhSdzJtc3lCWEdxSDJLYzBTTnVCUnF3NWJKVlozOFQtclZqOWF2WUZXYmNYOF9EOXU1WUVrTjRVQ3BzOC12WkhfQm1VdVVFOTB4QTEtRW00ZlRIX01DQQ?oc=5",
-      "pubDate": "Mon, 16 Mar 2026 11:09:14 GMT",
-      "snippet": "Ukrainian Drone Maker Wins Pentagon Contract in “Drone Dominance” Program&nbsp;&nbsp;UNITED24 Media"
-    },
-    {
-      "headline": "Ukraine Revamps Military Training With Focus on FPV Drone Defense - The Defense Post",
-      "source": "The Defense Post",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Mb3luY1BCTWNEemk4UFYtNXAzQmhTZENJRnR2eFJyM21fZno1bFhTNUtZTHdKbEM1RFBZOG9VS2U3REsxMDlPb0E2enAtdlR6M2NHaGVhYjBrR3RxQkFnMGdkSDRHb0tGSlhnQTVkWi10QlBrN0lBakhySjUwS1HSAYQBQVVfeXFMTUl4a3ZhMm5aM2hnN3pINGJLdVBVMktmT1NfLWRvS1pwNm50ZXhsRDR2NUd0T3NpOW5sQVE5Z2h4bGNYY1ZlS3g1NkNkd3F1SzZPMUJvbWlNRE5mTnQ0bVhFTzdZc1BNWDhFTXRTalFNZ2ZiY0NueWtvZ1puY2dWUjdQdFNa?oc=5",
-      "pubDate": "Fri, 13 Mar 2026 15:08:00 GMT",
-      "snippet": "Ukraine Revamps Military Training With Focus on FPV Drone Defense&nbsp;&nbsp;The Defense Post"
     },
     {
       "headline": "Ukraine Doubles Multicopter Drone Procurement in Early 2026 - UNITED24 Media",
