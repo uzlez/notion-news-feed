@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T23:33:03.718869+00:00",
+  "generatedAt": "2026-04-05T02:05:56.697774+00:00",
   "items": [
     {
       "headline": "Lithuanian Drone Unit Deploys Ukrainian Chuyka Detectors in NATO Defense Drills - UNITED24 Media",
@@ -14,6 +14,13 @@
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV3U4Y2RlMFlmU0dSWkEybTUwNXhvNnFsSUlSNHNReWZKZUw1RkZJT2Fyel8wOG5RcU1vNGpMVUZKaE45OW9YaDllZEx2Q202OS1jSGVoMUExRDJpckVyMnRDcTMtNW9NVE5YUmgwLVBidHY2SlBCZVE5eEEyY3VoVFlhVndhZzVYNUxaeFJfZUpkMml5MzE4WG52dw?oc=5",
       "pubDate": "Fri, 03 Apr 2026 18:26:11 GMT",
       "snippet": "The Week’s 10 Biggest Funding Rounds: Largest Financings Went To Defense, Wearables, Energy And Security&nbsp;&nbsp;Crunchbase News"
+    },
+    {
+      "headline": "Zelensky Warns Uncoordinated Arms Exports Could Undermine Ukraine’s War Effort - Kyiv Post",
+      "source": "Kyiv Post",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5tcjN6YjBqSWdaVERoV1prWDNFYTFYdmE4TnF3eDhHbGg4NHZXOTU4MGlXWnFuU2t6ZUZLV0wtZklFNTdNNDZYUGU2WQ?oc=5",
+      "pubDate": "Fri, 03 Apr 2026 11:17:18 GMT",
+      "snippet": "Zelensky Warns Uncoordinated Arms Exports Could Undermine Ukraine’s War Effort&nbsp;&nbsp;Kyiv Post"
     },
     {
       "headline": "Sweden to Invest $900M on Anti-Drone Systems - The Defense Post",
@@ -42,13 +49,6 @@
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSjBqVndkWkpSbG04RWNKWHI1VWUwcmhMVW9CM1RoNTQ5Q25FZ3JENnJwZXpXRVA4TnNTWXZoTUdrOTI3MXVSTVNPN2Rkc0pQejh3SGJ0YUhiclVBV29ULWRvT3JMZy1YTHJzVklBT1pkWGZFTzUyLTYxTHRiYndVTWpmNHdTaXpmN0l2WWhiRFZ4ZFE0ZThJ?oc=5",
       "pubDate": "Thu, 02 Apr 2026 09:40:25 GMT",
       "snippet": "Turns Out, Ukrainian “Housewife Drones” Hit Hard&nbsp;&nbsp;UNITED24 Media"
-    },
-    {
-      "headline": "Quantum Frontline Industries delivers first German-built Linza drones to Ukraine, begins serial production phase - Defence Industry Europe",
-      "source": "Defence Industry Europe",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbWV1QU41SHRZZ2RSWTg2eHJfUlVSQXJjYW9Hc0VmRlg2V3lDUVd6SlRjcnoxVzdmakZhdEpScjhsUW5pZkdZNWpjQkFKS0FqTjZfZUdyZjl2akcwbE1ZWk9fdjFMRlJuemJZQk9ESXFCTkVrSlJUaFBBTmtPbjlydGJzMl9rU0ZaNXpxLUQxR3dwYTdBR2JpMDZ2S0ZLYUxicmpieFhXZjlJb256TEE?oc=5",
-      "pubDate": "Wed, 01 Apr 2026 16:48:07 GMT",
-      "snippet": "Quantum Frontline Industries delivers first German-built Linza drones to Ukraine, begins serial production phase&nbsp;&nbsp;Defence Industry Europe"
     },
     {
       "headline": "Ukraine–Japan Drone Alliance Builds a $2,000 Answer to a $2 Million Air Defense Problem - UNITED24 Media",
@@ -86,18 +86,18 @@
       "snippet": "Netflix Co-Founder Joins $50M Defense Tech Push Backing Ukraine’s Battlefield Innovation&nbsp;&nbsp;UNITED24 Media"
     },
     {
-      "headline": "Ukraine's drone masters eye Iran war to kickstart export ambitions - Reuters",
-      "source": "Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObWk0QTdJd05kZUg4VjhrSkZ4T2dvZld6TXpSdDZYalViTEJJWnZFY2YwazVlRnJna2hNM3U4bG5aOUxqWFZFM1BYU1pMbno3cVBoSHlqS3JtMXcxODFicllobnlmQ055NEs2Ulp4dUMwb1N0bHhfRGZBcVAxYzVDY2tHcjlzUnNDbW11Uks3WFhkUTdIZGVzWkJKOVVmUXpKUHJIc2x6UnV5ZnQ3TlFiWE9wRkhmV0NwMmFHNHlBWXJ5dkU?oc=5",
-      "pubDate": "Mon, 30 Mar 2026 21:27:50 GMT",
-      "snippet": "Ukraine's drone masters eye Iran war to kickstart export ambitions&nbsp;&nbsp;Reuters"
-    },
-    {
       "headline": "Ukraine’s Defense Tech Sector Gets $5M Boost From New Investment Fund - UNITED24 Media",
       "source": "UNITED24 Media",
       "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOXI3T0tVZGhYUm1lZk9WZ0xweFRwU2N6cFkxZ3Q1LTQ1blpZQWhhZl9DbUZ0WmtnbVA4WFZVSmsyb1RzZUo5LUQzSk4xcVl3dktzekxCSXhsT2JIUnRDY3RFVEpsdkxRMWZ3LVVPS1BQNFZXSzloWWw0Y3NKbDBVbDhkMW1GeGctNVF1QURHakxraFA2LXE0b0xQbTgyaVhnWWp2b1p2MzZSUXI5eGZrWA?oc=5",
       "pubDate": "Mon, 30 Mar 2026 20:48:26 GMT",
       "snippet": "Ukraine’s Defense Tech Sector Gets $5M Boost From New Investment Fund&nbsp;&nbsp;UNITED24 Media"
+    },
+    {
+      "headline": "Ukraine-US Reconstruction Fund Approves First Investment in Drone-Tech Firm - Kyiv Post",
+      "source": "Kyiv Post",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBuS2NPMHJ5NHRjR29FdFppR3NERjdZN21XR1BGdVJMNXFOenZpeC1WLXQwRlVLOGpfdmNaZU5lUVJtUjdIYjVMSEZxMA?oc=5",
+      "pubDate": "Thu, 26 Mar 2026 07:00:00 GMT",
+      "snippet": "Ukraine-US Reconstruction Fund Approves First Investment in Drone-Tech Firm&nbsp;&nbsp;Kyiv Post"
     },
     {
       "headline": "Ukraine’s Brave1, NATO Launch €10M Competition for Counter-Drone Technology - Kyiv Post",
