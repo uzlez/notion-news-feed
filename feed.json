@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T21:57:55.639418+00:00",
+  "generatedAt": "2026-05-04T22:57:52.075878+00:00",
   "items": [
     {
       "headline": "European venture capital eyes defence sector but concerns remain - Science|Business",
@@ -37,18 +37,18 @@
       "snippet": "Australia boosts investment in counter-drone capabilities&nbsp;&nbsp;Asian Military Review"
     },
     {
+      "headline": "Ukraine’s Battlefield Tech Draws Europe Despite Wartime Limits - Kyiv Post",
+      "source": "Kyiv Post",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE85X1RQMERaWUpxU3JsM2otaXBIQ2pfcGNiY1JNSTJCUjJkYUtyZFAxWDlCR2VoTjFQaThaTEtnbFlhWndxQzhET2dwNA?oc=5",
+      "pubDate": "Mon, 04 May 2026 05:09:34 GMT",
+      "snippet": "Ukraine’s Battlefield Tech Draws Europe Despite Wartime Limits&nbsp;&nbsp;Kyiv Post"
+    },
+    {
       "headline": "Ukraine’s Drone War Has Already Rewritten NATO’s Future - Kyiv Post",
       "source": "Kyiv Post",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JN1docXRUSUV4SzlSY3NrelZ2Z2lYbkthT2p6alN3UmdfbVJUMVJHVTZtbVpnQTh5M0tkMURXTjZSa0g1d3hIQS1XZw?oc=5",
       "pubDate": "Sat, 02 May 2026 14:05:03 GMT",
       "snippet": "Ukraine’s Drone War Has Already Rewritten NATO’s Future&nbsp;&nbsp;Kyiv Post"
-    },
-    {
-      "headline": "Joint Interagency Task Force 401 conducts counter-UAS testing at U.S. base to advance layered air defense capabilities - Defence Industry Europe",
-      "source": "Defence Industry Europe",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQU0Z3Y2cxZVF0MGFCRGJzM3djLVlZd25PY25ybFdZMklFSXV0U0RPZGc5WkNVTkRaZndFWXJEV0xEYUdEUnpKUmNBQVR2MmxFUTJRbS1hTzQwQVFxYmw5dDMzYWd0bzc1aFZqdlVud0tNSUJ1T1hEZms1X0dteXVRVkwxS29MdUhLTEc4SUFlSjlMeFQ1bTVFbzlyRWV1QWczdkQtMjRoQUpBMG8tMm4tRXI1ekg3MUJkMDc4ZnJETmtORU50amhmai0tb3dYYmNGZFBLNE5tV0F1TWsxS0pr?oc=5",
-      "pubDate": "Sat, 02 May 2026 07:18:57 GMT",
-      "snippet": "Joint Interagency Task Force 401 conducts counter-UAS testing at U.S. base to advance layered air defense capabilities&nbsp;&nbsp;Defence Industry Europe"
     },
     {
       "headline": "The Week’s 10 Biggest Funding Rounds: Defense Tech Leads With Multiple Large Deals, Topped By $600M For Space Security Startup True Anomaly - Crunchbase News",
@@ -79,6 +79,13 @@
       "snippet": "EU to Test Defense Tech in Ukraine War Conditions With ‘BraveTech’ Platform&nbsp;&nbsp;The Defense Post"
     },
     {
+      "headline": "Japanese drone maker doubles down on Ukraine as Tokyo eases arms rules - The Kyiv Independent",
+      "source": "The Kyiv Independent",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcW1MREJyaGpITURmaFM0SVE2YUFLc1p1UUUyei02VXBCakFyZzd1YWxJREkyTGVMcnFHNkF4SWJXcmxZTHh3eWxMTHRMMEhOV04zQmFDX1RFUVNHSWpVOVpwZUVzV0lpQ2hfeHlPcUVXUHJRMnh0VEV2YWstRlJqUlUtazV3N1lNQW9lZndYTDEzamZSMmJqaDdZRHlyRFVHa1ZsU1JjX2NJUmIyV05qRWkzNVhNd3F5?oc=5",
+      "pubDate": "Wed, 29 Apr 2026 14:31:20 GMT",
+      "snippet": "Japanese drone maker doubles down on Ukraine as Tokyo eases arms rules&nbsp;&nbsp;The Kyiv Independent"
+    },
+    {
       "headline": "Israel Adopts Ukraine-Style Anti-FPV Drone Nets During Fighting in Lebanon - UNITED24 Media",
       "source": "UNITED24 Media",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSVpJU0dlSmpzamVGVHVObXE2NnM5UVBtTHI4eWNpYUxCNTJHYmUtaTlxaGlIaWVSY0VScTdHZGZSVERQaVpBRkhvUW1FNjBhSTBCRVpsSndHX2ZmSzJmVDVJZ3B2TjdEQWh5Z25FenJGRk42Z1J4Tk4yUmQ1NFpIbWRsbkU0RUJ4ZC1fQm9oaUZwMDhXWV84eEhDRExNdjMwai1ZeVV2MHRiallUVEN0Ykt3?oc=5",
@@ -91,13 +98,6 @@
       "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQX0h2cXlrWHo1Smw3bXBYOEhIak1VMWFBR1FGU2ttOXJTUnQxRkNkVUs1R244RFNYUUpPRTNJeXNvdE5GeFFWbEduRVdTQ2NRUkc3MXVZYW9IUHJYQy1LZkRsRnhkdm1nZ3lxTlNQOFhLdk51UDNBaGpnckp0alJya1BxWWtMdi0wSFg0dnp6Wk82X3NLUmVsN19RUjUwMTBMTzZfOTlTVlNOa3BBRHFVeWFBdThpTm9CRGpEQ09GU25SWi1CenZqWUdYTmNQUQ?oc=5",
       "pubDate": "Wed, 29 Apr 2026 10:28:46 GMT",
       "snippet": "Ukraine tests new long-range FPV drones as Brave1 accelerates battlefield deployment of unmanned systems&nbsp;&nbsp;Defence Industry Europe"
-    },
-    {
-      "headline": "Marine requirement for lightweight counter-drone tech to be released in coming months - Breaking Defense",
-      "source": "Breaking Defense",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdVU2cUJtTnBzNDdkbzhGZWt0djA3Y3A4dEVwQzRMZ1ducWVObFBHYWx0d3kwa29hVGlaV3plaEVsVWR4YzRLdkQyMzZaYmtsZ2lHdXYzMDRfZklMem9wUUxxU2tJV3k3X0R4Ymw0Q0NGakJtYm5YbnVtMF9YWjZ3MFJDcG0zYmpibjNlTlk1X2hjWkxWNm1uZGhRcXZVSlFiUHg0REo2X19UaFFsV0VMcE9jcUdwZW9LUk45Q0NuOA?oc=5",
-      "pubDate": "Tue, 28 Apr 2026 20:36:04 GMT",
-      "snippet": "Marine requirement for lightweight counter-drone tech to be released in coming months&nbsp;&nbsp;Breaking Defense"
     },
     {
       "headline": "Ukraine’s MoD and European Commission agree on funding for new defense technologies - Ukrinform - Ukrainian National News Agency",
